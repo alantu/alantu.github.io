@@ -119,6 +119,7 @@ form#join button {
 
 .counter {
   font-size: 2em;
+  margin-bottom: 30px;
 }
 
 .counter .num {
