@@ -34,19 +34,28 @@ Founder....: Sofia Pro EXTRA LIGHT
 }
 
 body {
-  padding-top: 5%;
   font-family: SofiaProRegular;
+  font-size: 12pt;
+  padding-top: 5%;
   color: #FFF;
   background-color:#19102f;
 }
 
 #container {
-  width: 660px;
+  max-width: 661px;
   margin: 0 auto;
+  padding: 0 2em;
+}
+
+#logo img {
+  max-width:100%;
 }
 
 hr {
   border: 1px solid #ec5f45;
+  width: 90%;
+  text-align: left;
+  margin-left: 0;
 }
 
 video {
@@ -67,6 +76,7 @@ h1 {
   color: #fff;
   display: inline-block;
   margin: 5% 0;
+  width: 105%;
 }
 
 h2 {
@@ -76,13 +86,10 @@ h2 {
 }
 
 .copy {
+  width: 83%;
   font-size: 1.1em;
   line-height: 1.6em;
   margin-bottom: 30px;
-}
-
-.copy .start {
-  font-family: SofiaProBold;
 }
 
 form {
@@ -99,7 +106,7 @@ form#join input[type="email"] {
   -moz-box-shadow: inset 0; 
   box-shadow: inset 0;
   padding: 10px;
-  background: #ec5f45;
+  background: rgba(236, 95, 69, .6);
   margin: 0 0 10px 0;
 }
 
@@ -118,13 +125,13 @@ form#join button {
 }
 
 .counter {
-  font-size: 2em;
+  font-size:100%;
   margin-bottom: 30px;
 }
 
 .counter .num {
   float: left;
-  font-size: 1.5em;
+  font-size: 3em;
   position: relative;
   top: 3px;
   margin-right: 5px;
@@ -132,7 +139,7 @@ form#join button {
 
 .counter .txt {
   font-family: SofiaProExtraLight;
-  font-size: 0.6em;
+  font-size: 1.2em;
   font-weight: bold;
   color: #ec5f45;
   position:relative;
