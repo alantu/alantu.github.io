@@ -1,13 +1,3 @@
-/**
-Push....: Sofia Pro BOLD
-We are....: Sofia Pro REGULAR
-Are you...: Sofia Pro BOLD
-Enter your...:Sofia Pro LIGHT
-Submit...: Sofia Pro BOLD
-1000: Sofia Pro LIGHT
-Founder....: Sofia Pro EXTRA LIGHT
-**/
-
 @font-face {
   font-family: SofiaProBold;
   src: url(fonts/SofiaProBold.otf);
@@ -35,14 +25,14 @@ Founder....: Sofia Pro EXTRA LIGHT
 
 body {
   font-family: SofiaProRegular;
-  font-size: 12pt;
+  font-size: 10pt;
   padding-top: 5%;
   color: #FFF;
   background-color:#19102f;
 }
 
 #container {
-  max-width: 661px;
+  max-width: 562px;
   margin: 0 auto;
   padding: 0 2em;
 }
