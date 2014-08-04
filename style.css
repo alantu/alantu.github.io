@@ -65,7 +65,7 @@ h1 {
   font-size: 3.2em;
   color: #fff;
   display: inline-block;
-  margin: 5% 0;
+  margin: 5% 0 2%;
   width: 105%;
 }
 
@@ -83,7 +83,7 @@ h2 {
 }
 
 form {
-  margin-bottom: 30px;
+  margin-bottom: 2%;
 }
 
 form#join input[type="email"] {
