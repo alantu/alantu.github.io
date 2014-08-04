@@ -97,7 +97,6 @@ form#join input[type="email"] {
   box-shadow: inset 0;
   padding: 10px;
   background: rgba(236, 95, 69, .6);
-  margin: 0 0 10px 0;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -116,22 +115,20 @@ form#join input[type="email"] {
 }
 
 form#join button {
-  font-size:0.9em;
+  font-size:0.8em;
   color: #FFF;
   border: 0 none; 
   background: #ec5f45;
   -webkit-box-shadow: inset 0; 
   -moz-box-shadow: inset 0; 
   box-shadow: inset 0;
-  padding: 10px 10px 11px 10px;
-  margin: 0 0 10px 0;
+  padding: 10px 10px 12px 10px;
   position: relative;
-  top:1px;
 }
 
 .counter {
   font-size:100%;
-  margin-bottom: 30px;
+  margin-bottom: 10%;
 }
 
 .counter .num {
