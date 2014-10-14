@@ -3,50 +3,105 @@
 <head>
   <meta charset="utf-8">
   <title>Alantu Experiment</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-  <video loop="loop" autoplay poster="video.png">
-    <source src="video.mp4">
-  </video>
 
-  <div id="container">
+  <div id="header">
 
-    <div id="logo">
-      <img src="img/logo.png" alt="Alantu logo" />
+    <video id="header-video" loop=1 preload=1>
+      <source src="video/video.mp4">
+    </video>
+
+    <div id="topnav" class="navbar navbar-inverse navbar-static-top">
+
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar_collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-logo" href=""><img src="img/logo_small.png" /></a>
+        </div>
+
+        <div id="navbar_collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/home/">HOME</a></li>
+            <li><a href="/about/">FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+
     </div>
 
-    <h1>Push the Human <img src="img/flecha.png" /> Machine to the Next Level.</h1>
+    <section id="main-section">
 
-    <p class="copy">We are going through a crucial milestone in the history of mankind.
-    Of the 5.000 generations of human beings to ever walk the earth,
-    we may be those who live in this century that ultimately determine
-    OUR DESTINY.</p>
+      <div class="container">
 
-    <hr />
+        <div class="row">
+          <div class="col-md-9">
 
-    <h2>ARE YOU READY TO JOIN?</h2>
+            <h1><span class="title">ALANTU</span><br />
+              Processing the Future
+            </h1>
 
-    <form id="join" action="http://alantu.createsend.com/t/d/s/jtdiir/" method="post">
-      <input id="fieldEmail" name="cm-jtdiir-jtdiir" type="email" required placeholder="enter your e-mail address" />
-      <button type="submit">SUBMIT!</button>
-    </form>
+            <form id="waitinglist" class="form-inline">
+              <div class="form-group">
+                <input id="waitinglist-email" type="text" class="form-control input-lg" placeholder="Email" name="email" />
+              </div>
+              <div class="form-group">
+                <button id="waitinglist-button" type"submit" class="btn btn-lg btn-default">Get Early Access</button>
+              </div>
+            </form>
+          </div>
+        </div>
 
-    <div class="counter">
-      <div class="num">1.000</div> <div class="txt">FOUNDERS <br />ACCOUNTS</div>
+      </div> <!-- end container -->
+
+    </section>
+
+  </div> <!-- /header -->
+
+  <section id="second-section">
+
+    <svg class="triangle-right" viewBox="0 0 30 30" preserveAspectRatio="none">
+      <polygon points="0,0 210,210 0,210" />
+    </svg>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <img class="feature-image" src="img/phone1.png" />
+        </div>
+        <div class="col-md-5">
+          <h4>LOREM IPSUM</h4>
+          <h1>LOREM IPSUM PROIN GRAVIDA NIBH BEL</h1>
+          <p>Lorem Ipsum. Proin gravidan...</p>
+        </div>
+      </div>
+
     </div>
-  </div>
-
+  </section>
+  
 </body>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
   ga('create', 'UA-53494785-1', 'auto');
   ga('send', 'pageview');
 </script>
