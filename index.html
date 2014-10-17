@@ -15,7 +15,7 @@
 
   <div id="header">
 
-    <video id="header-video" loop=1 preload=1>
+    <video id="header-video" loop="loop" autoplay>
       <source src="video/video.mp4">
     </video>
 
@@ -51,9 +51,8 @@
         <div class="row">
           <div class="col-md-9">
 
-            <h1><span class="title">ALANTU</span><br />
-              Processing the Future
-            </h1>
+            <h1><img src="img/logo_text.png" /></h1>
+            <h3>Processing the Future</h3>
 
             <form id="waitinglist" class="form-inline">
               <div class="form-group">
@@ -63,6 +62,9 @@
                 <button id="waitinglist-button" type"submit" class="btn btn-lg btn-default">Get Early Access</button>
               </div>
             </form>
+
+            <a id="play_button" href=""><img src="img/play_button.png" />Watch Video</a>
+
           </div>
         </div>
 
@@ -74,26 +76,112 @@
 
   <section id="second-section">
 
-    <svg class="triangle-right" viewBox="0 0 30 30" preserveAspectRatio="none">
-      <polygon points="0,0 210,210 0,210" />
+    <svg class="triangle" viewBox="0 0 100 20" preserveAspectRatio="none">
+      <polygon points="0,0 100,20 0,20" />
     </svg>
-
 
     <div class="container">
       <div class="row">
-        <div class="col-md-7">
-          <img class="feature-image" src="img/phone1.png" />
-        </div>
         <div class="col-md-5">
-          <h4>LOREM IPSUM</h4>
-          <h1>LOREM IPSUM PROIN GRAVIDA NIBH BEL</h1>
-          <p>Lorem Ipsum. Proin gravidan...</p>
+          <img class="feature-image" src="img/phone2.png" />
+        </div>
+        <div class="col-md-5 copy">
+          <h4>ARE YOU READY TO JOIN?</h4>
+          <h1>PUSH THE  HUMAN <img src="img/flecha.png" /> MACHINE TO THE NEXT LEVEL.</h1>
+          <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.</p>
+          <a href="https://play.google.com/store/apps/details?id=io.alantu">
+            <img alt="Android app on Google Play" src="/img/en_app_rgb_wo_45.png" />
+          </a>
         </div>
       </div>
 
     </div>
+    
+    <svg class="triangle" viewBox="0 0 100 20" preserveAspectRatio="none">
+      <polygon points="0,20 0,0 100,0" />
+    </svg>
+
+  </section>
+
+  <section id="third-section">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 copy">
+          <h4>ALANTU, A GAME WHERE..</h4>
+          <h1>HOW DOES IT WORK?</h1>
+          <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.
+          </p>
+
+          <!-- 
+          <p>
+            <img src="img/alantu-small.png" />
+          </p>
+          -->
+
+          <ol class="indicators">
+            <li></li>
+            <li></li>
+            <li class="active"></li>
+          </ol>
+
+        </div>
+
+        <div class="col-md-6">
+          <div class="phone">
+            <img class="feature-image" src="img/phone.png" />
+            <img class="screen" src="img/tutorial_1.png" />
+          </div>
+        </div>
+
+      </div> <!-- /row -->
+
+    </div> <!-- /container -->
+
   </section>
   
+  <section id="fourth-section">
+
+    <svg class="triangle" viewBox="0 0 100 20" preserveAspectRatio="none">
+      <polygon points="0,0 100,20 0,20" />
+    </svg>
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="copy col-md-5 col-md-push-6">
+            <img class="logo-top" src="img/ico1.png" />
+            <h1>PUSH THE  HUMAN MACHINE TO THE NEXT LEVEL</h1>
+            <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.</p>
+            <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.</p>
+            <hr />
+          </div>
+          <div class="col-md-7 col-md-pull-6">
+            <img class="feature-image" src="img/phone3.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section id="fifth-section">
+    <div class="container text-center">
+      <img class="logo" src="img/alantu-vertical.png" />
+      <h2>Powered by <b>BOINC</b><br />
+        Open Community Platform 
+      </h2>
+      <p class="social">
+        <img class="twitter-logo" src="img/twitter.png">
+        <img class="facebook-logo" src="img/facebook.png">
+      </p>
+    </div>
+  </section>
+
+  <footer class="clearfix">
+    <img class="pull-left" src="img/logo_small.png" />
+    <p>Copyright @ 2014 ALANTU. All rights reserved.</p>
+  </footer>
+
 </body>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/bootstrap.js"></script>

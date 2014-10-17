@@ -28,24 +28,45 @@ html {
 }
 
 body {
-  font-family: Helvetica;
+  font-family: SofiaProExtraLight;
   width: 100%;
   height: 100%;
   text-align: center;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 50px;
+  font-family:SofiaProBold;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: 8px;
 }
 
 h4 {
+  font-family: SofiaProRegular;
   color: #fe5e44;
   letter-spacing: 0.4em;
 }
 
-section {
-  height: 100%;
+p {
+  font-family: SofiaProLight;
+  line-height: 26px;
+  font-size: 16px;
 }
+
+a, a:hover {
+  color: #FFF;
+  font-family: SofiaProRegular;
+}
+
+/*
+section {
+  min-height: 100%;
+}
+*/
 
 .feature-image {
   max-width: 100%;
@@ -110,20 +131,25 @@ section {
   overflow:hidden;
   height: inherit; width: 100%;
   color: #FFF;
-  padding-bottom: 50px;
+  padding-bottom: 160px;
 }
 
-#main-section h1 {
-  line-height: 1.5;
+#main-section #play_button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-#main-section h1 .title {
-  font-family: SofiaProBold;
+#main-section #play_button img {
+  margin-right: 15px;
 }
 
+#main-section #play_button:hover {
+  text-decoration: none; 
+}
 
 #waitinglist {
-  margin: 100px 0;
+  margin: 45px 0;
 }
 
 #waitinglist-email {
@@ -137,9 +163,176 @@ section {
   width: 260px;
 }
 
+#second-section {
+  margin-top: -100px;
+}
+
+#second-section .container {
+  padding: 20px 0 0;
+}
+
+#second-section .copy {
+  padding-top: 30px;
+}
+
+#second-section .feature-image {
+  transform: rotateY(180deg);
+}
+
+.triangle {
+  width:100%; 
+  height:101px; 
+  background-color: transparent;
+  display:block;
+}
+
+.triangle polygon {
+  fill: #FFF;
+}
+
+#third-section {
+  min-height: 500px;
+  background: url(../img/mesh.png);
+  margin-top: -100px;
+  padding-top: 230px;
+}
+
+#third-section h1,
+#third-section p {
+  color: #FFF;
+}
+
+#third-section .logo-bottom {
+  margin: 20px 0;
+  max-height: 95px;
+}
+
+#third-section .indicators {
+  margin: 20px 0px;
+}
+
+.indicators {
+  list-style: none;
+  padding: 0;
+}
+
+.indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #fff;
+}
+
+#fourth-section {
+  min-height: 600px;
+  margin-top: -200px;
+  color: #FFF;
+}
+
+#fourth-section .wrapper {
+  background: #f95d42;
+  margin-top: -1px;
+  padding: 345px 0 50px;
+}
+
+#fourth-section .triangle polygon {
+  fill: #f95d42;
+}
+
+#fourth-section .logo-top {
+  margin-bottom: 20px;
+}
+
+#fourth-section hr {
+  margin: 30px auto;
+  border-width: 3px;
+  width: 90px;
+}
+
+#fourth-section .phone {
+  margin: 0 auto;
+}
+
+.phone {
+  position: relative;
+  width: 470px;
+}
+
+.phone .screen {
+  position:absolute;
+  top: 221px;
+  left: 136px;
+  width: 200px;
+  transition: opacity .5s ease-in-out;
+}
+
+.phone .screen:hover {
+  opacity: 0;
+
+}
+
+#fifth-section {
+  background-color: #000;
+  padding: 300px 0;
+  color: #FFF;
+}
+
+#fifth-section .container {
+  max-width: 600px;
+}
+
+#fifth-section .logo {
+  margin-bottom: 30px;
+
+}
+
+#fifth-section .social {
+  margin-top: 40px;
+}
+
+#fifth-section .social img {
+  width: 40px;
+}
+
+#fifth-section .twitter-logo {
+  margin-right: 25px;
+}
+
+footer {
+  text-align: center;
+  background-color: #111;
+  color: #DDD;
+}
+
+footer img {
+  height: 25px; 
+  margin: 5px 10px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
 @media (min-width: 768px) {
   body {
     text-align: left;
+  }
+
+  #waitinglist {
+    margin: 75px 0;
   }
 
   #waitinglist-email {
@@ -151,30 +344,24 @@ section {
     padding-bottom: 40px;
     line-height: 19px;
   }
+  #fourth-section hr {
+    text-align: left;
+    margin-left:0;
+  }
+
+  #fourth-section .phone {
+    margin: 0;
+  }
 }
 
-/*
-#second-section .feature-image {
-  margin-top: -40px;
-}
+@media (min-width: 992px) {
+  #waitinglist {
+    margin: 105px 0 130px;
+  }
 
-#second-section h4 {
-  margin-top: 200px;
-}
-*/
+  #second-section .copy {
+    padding-top: 220px;
+  }
 
-#second-section {
-  margin-top: -100px;
 }
-
-.triangle-right {
-  width:100%; 
-  height:100px; 
-  background-color: transparent;
-}
-
-.triangle-right polygon {
-  fill: #FFF;
-}
-
 
