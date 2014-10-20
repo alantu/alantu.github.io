@@ -207,8 +207,10 @@ section {
   max-height: 95px;
 }
 
-#third-section .indicators {
-  margin: 20px 0px;
+.phone .indicators {
+  position: absolute;
+  bottom: 20%; 
+  left: 45%;
 }
 
 .indicators {
@@ -268,20 +270,34 @@ section {
 
 .phone {
   position: relative;
-  width: 470px;
+  min-width: 300px;
+  max-width: 475px;
 }
 
 .phone .screen {
   position:absolute;
-  top: 221px;
-  left: 136px;
-  width: 200px;
-  transition: opacity .5s ease-in-out;
+  top: 30%;
+  left: 25%;
+  width: 50%;
+  transition: opacity .5s ease-in-out, top .5s ease-in-out;
+  opacity: 0;
 }
 
-.phone .screen:hover {
-  opacity: 0;
+.screen1 #screen1,
+.screen2 #screen2,
+.screen3 #screen3 {
+  opacity: 1;
+  top: 25%;
+}
 
+#tutorial .tutorial {
+  display: none; 
+}
+
+.tutorial1 #tutorial1,
+.tutorial2 #tutorial2,
+.tutorial3 #tutorial3 {
+  display: block; 
 }
 
 #fifth-section {

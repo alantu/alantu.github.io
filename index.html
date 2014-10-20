@@ -108,10 +108,27 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 copy">
-          <h4>ALANTU, A GAME WHERE..</h4>
-          <h1>HOW DOES IT WORK?</h1>
-          <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.
-          </p>
+          <h4>HOW DOES IT WORK?</h4>
+
+          <div id="tutorial" class="tutorial1">
+            <div id="tutorial1" class="tutorial">
+              <h1>PLUG IN AND CONNECT TO WIFI</h1>
+              <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.
+              </p>
+            </div>
+
+            <div id="tutorial2" class="tutorial">
+              <h1>SELECT PROJECTS</h1>
+              <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.
+              </p>
+            </div>
+
+            <div id="tutorial3" class="tutorial">
+              <h1>START PROCESSING</h1>
+              <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.
+              </p>
+            </div>
+          </div>
 
           <!-- 
           <p>
@@ -119,18 +136,21 @@
           </p>
           -->
 
-          <ol class="indicators">
-            <li></li>
-            <li></li>
-            <li class="active"></li>
-          </ol>
-
         </div>
 
         <div class="col-md-6">
-          <div class="phone">
+          <div class="phone screen1">
             <img class="feature-image" src="img/phone.png" />
-            <img class="screen" src="img/tutorial_1.png" />
+
+            <img id="screen1" class="screen" src="img/tutorial_1.png" />
+            <img id="screen2" class="screen" src="img/tutorial_2.png" />
+            <img id="screen3" class="screen" src="img/tutorial_3.png" />
+            <ol class="indicators">
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+            </ol>
+
           </div>
         </div>
 
@@ -183,8 +203,11 @@
   </footer>
 
 </body>
+
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
