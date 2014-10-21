@@ -8,7 +8,7 @@ var intervalId = setInterval(function() {
 
   selectIndicator(index);
   showScreen(index);
-  showTutorial(index);
+  //showTutorial(index);
 
 }, 5000);
 
@@ -17,7 +17,7 @@ $(".indicators li").click(function() {
 
   selectIndicator(index);
   showScreen(index);
-  showTutorial(index);
+  //showTutorial(index);
 
   clearInterval(intervalId);
 });
