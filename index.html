@@ -3,202 +3,50 @@
 <head>
   <meta charset="utf-8">
   <title>Alantu Experiment</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+  <video loop="loop" autoplay poster="video.png">
+    <source src="video.mp4">
+  </video>
 
-  <div id="header">
+  <div id="container">
 
-    <video id="header-video" loop="loop" autoplay>
-      <source src="video/video.mp4">
-    </video>
-
-    <div id="topnav" class="navbar navbar-inverse navbar-static-top">
-
-      <div class="container-fluid">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar_collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-logo" href=""><img src="img/logo_small.png" /></a>
-        </div>
-
-        <div id="navbar_collapse" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/home/">HOME</a></li>
-            <li><a href="/about/">FAQs</a></li>
-          </ul>
-        </div>
-
-      </div>
-
+    <div id="logo">
+      <img src="img/logo.png" alt="Alantu logo" />
     </div>
 
-    <section id="main-section">
+    <h1>Push the Human <img src="img/flecha.png" /> Machine to the Next Level.</h1>
 
-      <div class="container">
+    <p class="copy">We are going through a crucial milestone in the history of mankind.
+    Of the 5.000 generations of human beings to ever walk the earth,
+    we may be those who live in this century that ultimately determine
+    OUR DESTINY.</p>
 
-        <div class="row">
-          <div class="col-md-9">
+    <hr />
 
-            <h1><img src="img/logo_text.png" /></h1>
-            <h3>Processing the Future</h3>
+    <h2>ARE YOU READY TO JOIN?</h2>
 
-            <form id="waitinglist" class="form-inline">
-              <div class="form-group">
-                <input id="waitinglist-email" type="text" class="form-control input-lg" placeholder="Email" name="email" />
-              </div>
-              <div class="form-group">
-                <button id="waitinglist-button" type"submit" class="btn btn-lg btn-default">Get Early Access</button>
-              </div>
-            </form>
+    <form id="join" action="http://alantu.createsend.com/t/d/s/jtdiir/" method="post">
+      <input id="fieldEmail" name="cm-jtdiir-jtdiir" type="email" required placeholder="enter your e-mail address" />
+      <button type="submit">SUBMIT!</button>
+    </form>
 
-            <a id="play_button" href=""><img src="img/play_button.png" />Watch Video</a>
-
-          </div>
-        </div>
-
-      </div> <!-- end container -->
-
-    </section>
-
-  </div> <!-- /header -->
-
-  <section id="second-section">
-
-    <svg class="triangle" viewBox="0 0 100 20" preserveAspectRatio="none">
-      <polygon points="0,0 100,20 0,20" />
-    </svg>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-          <img class="feature-image" src="img/phone2.png" />
-        </div>
-        <div class="col-md-5 copy">
-          <h4>ARE YOU READY TO JOIN?</h4>
-          <h1>PUSH THE  HUMAN <img src="img/flecha.png" /> MACHINE TO THE NEXT LEVEL.</h1>
-          <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.</p>
-          <a href="https://play.google.com/store/apps/details?id=io.alantu">
-            <img alt="Android app on Google Play" src="/img/en_app_rgb_wo_45.png" />
-          </a>
-        </div>
-      </div>
-
+    <div class="counter">
+      <div class="num">1.000</div> <div class="txt">FOUNDERS <br />ACCOUNTS</div>
     </div>
-    
-    <svg class="triangle" viewBox="0 0 100 20" preserveAspectRatio="none">
-      <polygon points="0,20 0,0 100,0" />
-    </svg>
-
-  </section>
-
-  <section id="third-section">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 copy">
-          <h4>HOW DOES IT WORK?</h4>
-          <h1>ALANTU: THE GAME</h1>
-          <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.</p>
-          <img class="hex-logo" src="img/alantu-small.png" />
-        </div>
-
-        <div class="col-md-6">
-          <div class="phone screen1">
-            <img class="feature-image" src="img/phone.png" />
-
-            <div id="screen1" class="screen">
-              <img src="img/tutorial_1.png" />
-              <p>You can either be a Hunter or a Sleeper. A Hunter manages a grid of sleepers.</p>
-            </div>
-            <div id="screen2" class="screen">
-              <img src="img/tutorial_2.png" />
-              <p>You´ll be able to select which project your grid wants to contribute.</p>
-            </div>
-            <div id="screen3" class="screen">
-              <img src="img/tutorial_3.png" />
-              <p>You will progress in the game by processing workunits from the projects you selected.</p>
-            </div>
-
-            <ol class="indicators">
-              <li class="active"></li>
-              <li></li>
-              <li></li>
-            </ol>
-
-          </div>
-        </div>
-
-      </div> <!-- /row -->
-
-    </div> <!-- /container -->
-
-  </section>
-  
-  <section id="fourth-section">
-
-    <svg class="triangle" viewBox="0 0 100 20" preserveAspectRatio="none">
-      <polygon points="0,0 100,20 0,20" />
-    </svg>
-    <div class="wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="copy col-md-5 col-md-push-6">
-            <img class="hex-logo" src="img/ico1.png" />
-            <h1>PUSH THE  HUMAN MACHINE TO THE NEXT LEVEL</h1>
-            <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.</p>
-            <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.</p>
-            <hr />
-          </div>
-          <div class="col-md-7 col-md-pull-6">
-            <img class="feature-image" src="img/phone3.png" />
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </section>
-
-  <section id="fifth-section">
-    <div class="container text-center">
-      <img class="logo" src="img/alantu-vertical.png" />
-      <h2>Powered by <b>BOINC</b><br />
-        Open Community Platform 
-      </h2>
-      <p class="social">
-        <img class="twitter-logo" src="img/twitter.png">
-        <img class="facebook-logo" src="img/facebook.png">
-      </p>
-    </div>
-  </section>
-
-  <footer class="clearfix">
-    <img class="pull-left" src="img/logo_small.png" />
-    <p>Copyright @ 2014 ALANTU. All rights reserved.</p>
-  </footer>
+  </div>
 
 </body>
-
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/main.js"></script>
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
   ga('create', 'UA-53494785-1', 'auto');
   ga('send', 'pageview');
 </script>

@@ -1,0 +1,151 @@
+@font-face {
+  font-family: SofiaProBold;
+  src: url(fonts/SofiaProBold.otf);
+}
+
+@font-face {
+  font-family: SofiaProRegular;
+  src: url(fonts/SofiaProRegular.otf);
+}
+
+@font-face {
+  font-family: SofiaProLight;
+  src: url(fonts/SofiaProLight.otf);
+}
+
+@font-face {
+  font-family: SofiaProBold;
+  src: url(fonts/SofiaProBold.otf);
+}
+
+@font-face {
+  font-family: SofiaProExtraLight;
+  src: url(fonts/SofiaProExtraLight.otf);
+}
+
+body {
+  font-family: SofiaProRegular;
+  font-size: 10pt;
+  padding-top: 5%;
+  color: #FFF;
+  background-color:#19102f;
+}
+
+#container {
+  max-width: 562px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+#logo img {
+  max-width:100%;
+}
+
+hr {
+  border: 1px solid #ec5f45;
+  width: 90%;
+  text-align: left;
+  margin-left: 0;
+}
+
+video {
+  background-image: url(video.png);
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+h1 {
+  font-size: 3.2em;
+  color: #fff;
+  display: inline-block;
+  margin: 5% 0 2%;
+  width: 105%;
+}
+
+h2 {
+  font-family: SofiaProBold;
+  font-size: 1.2em;
+  margin: 30px 0;
+}
+
+.copy {
+  width: 83%;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  margin-bottom: 30px;
+}
+
+form {
+  margin-bottom: 2%;
+}
+
+form#join input[type="email"] {
+  width: 230px;
+  font-family: SofiaProLight;
+  font-size:0.9em;
+  color: #FFF;
+  border: 1px solid #ec5f45;
+  -webkit-box-shadow: inset 0; 
+  -moz-box-shadow: inset 0; 
+  box-shadow: inset 0;
+  padding: 10px;
+  background: rgba(236, 95, 69, .6);
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color:    #FFF;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #FFF;
+  opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #FFF;
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:    #FFF;
+}
+
+form#join button {
+  font-size:0.8em;
+  color: #FFF;
+  border: 0 none; 
+  background: #ec5f45;
+  -webkit-box-shadow: inset 0; 
+  -moz-box-shadow: inset 0; 
+  box-shadow: inset 0;
+  padding: 10px 10px 12px 10px;
+  position: relative;
+}
+
+.counter {
+  font-size:100%;
+  margin-bottom: 10%;
+}
+
+.counter .num {
+  float: left;
+  font-size: 3em;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.counter .txt {
+  font-family: SofiaProExtraLight;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ec5f45;
+  position:relative;
+  top: 6px;
+  letter-spacing: 1px;
+}
+
