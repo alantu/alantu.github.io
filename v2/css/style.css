@@ -29,20 +29,24 @@ html {
 
 body {
   font-family: SofiaProExtraLight;
-  font-size: 16px;
+  font-size: 14px;
   width: 100%;
   height: 100%;
   text-align: center;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-family:SofiaProBold;
 }
 
+h2 {
+  font-size: 22px;
+}
+
 h3 {
-  font-size: 32px;
-  line-height: 1.2;
+  font-size: 22px;
+  line-height: 1.2px;
   letter-spacing: 8px;
 }
 
@@ -50,6 +54,7 @@ h4 {
   font-family: SofiaProRegular;
   color: #fe5e44;
   letter-spacing: 0.4em;
+  font-size: 14px;
 }
 
 p {
@@ -102,12 +107,16 @@ section {
 }
 
 #topnav .navbar-toggle {
-  margin-top: 30px;
+  margin-top: 18px;
 }
 
 #topnav .navbar-logo {
   float: left;
   padding: 15px 15px;
+}
+
+#topnav .navbar-logo img {
+  width: 40px;
 }
 
 #topnav a {
@@ -137,7 +146,7 @@ section {
 
 #main-section #play_button {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -179,6 +188,7 @@ section {
 }
 
 #second-section .feature-image {
+  max-width: 70%;
   transform: rotateY(180deg);
 }
 
@@ -210,7 +220,7 @@ section {
 }
 
 #third-section .hex-logo {
-  margin: 20px 0;
+  margin: 0 0 15px;
 }
 
 .phone .indicators {
@@ -279,7 +289,7 @@ section {
   margin: 0 auto;
   position: relative;
   min-width: 300px;
-  max-width: 475px;
+  max-width: 370px;
 }
 
 .phone .screen {
@@ -334,7 +344,7 @@ section {
 
 #fifth-section {
   background-color: #000;
-  padding: 150px 0;
+  padding: 100px 0;
   color: #FFF;
 
   /** FIREFOX **/
@@ -346,15 +356,16 @@ section {
 }
 
 #fifth-section .logo {
-  margin-bottom: 30px;
+  max-width: 150px;
+  margin-bottom: 15px;
 }
 
 #fifth-section .social {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 #fifth-section .social img {
-  width: 40px;
+  width: 30px;
 }
 
 #fifth-section .twitter-logo {
@@ -377,8 +388,8 @@ footer p {
 }
 
 .hex-logo {
-  width: 60px; 
-  max-width: 90px;
+  width: 40px; 
+  max-width: 70px;
 }
 
 @media (min-width: 768px) {
@@ -395,8 +406,8 @@ footer p {
   }
 
   #topnav .navbar-nav > li > a {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     line-height: 19px;
   }
   #fourth-section hr {
@@ -408,12 +419,16 @@ footer p {
     padding-top: 200px;
   }
 
+  #third-section .hex-logo {
+    margin-top: 10px;
+  }
+
   #fourth-section .wrapper {
     padding-top: 245px;
   }
 
   #fifth-section {
-    padding: 300px 0;
+    padding: 220px 0;
   }
 }
 
