@@ -15,7 +15,7 @@
 
   <div id="header">
 
-    <video id="header-video" loop="loop" autoplay>
+    <video id="header-video" poster="poster.png" loop="loop" autoplay>
       <source src="video/video.mp4">
     </video>
 
@@ -30,7 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-logo" href=""><img src="img/logo_small.png" /></a>
+          <a class="navbar-logo" href=""><img src="img/orig/logo_small.png" /></a>
         </div>
 
         <div id="navbar_collapse" class="navbar-collapse collapse">
@@ -51,7 +51,7 @@
         <div class="row">
           <div class="col-md-9">
 
-            <h1><img src="img/logo_text.png" /></h1>
+            <h1><img src="img/orig/logo_text.png" /></h1>
             <h3>Processing the Future</h3>
 
             <form id="waitinglist" class="form-inline">
@@ -63,7 +63,7 @@
               </div>
             </form>
 
-            <a id="play_button" href=""><img src="img/play_button.png" />Watch Video</a>
+            <a id="play_button" href=""><img src="img/orig/play_button.png" />Watch Video</a>
 
           </div>
         </div>
@@ -82,15 +82,23 @@
 
     <div class="container">
       <div class="row">
+
         <div class="col-md-5">
-          <img class="feature-image lazyload" src="dist/lq/phone2.png" data-src="img/phone2.png" data-sizes="auto" />
+
+          <img 
+            class="feature-image lazyload" 
+            src="img/lq/phone2.png" 
+            data-src="img/orig/phone2.png" 
+            data-sizes="100%" />
+
         </div>
+
         <div class="col-md-5 copy">
           <h4>ARE YOU READY TO JOIN?</h4>
-          <h1>PUSH THE  HUMAN <img src="img/flecha.png" /> MACHINE TO THE NEXT LEVEL.</h1>
+          <h1>PUSH THE  HUMAN <img src="img/orig/flecha.png" /> MACHINE TO THE NEXT LEVEL.</h1>
           <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.</p>
           <a href="https://play.google.com/store/apps/details?id=io.alantu">
-            <img alt="Android app on Google Play" src="img/en_app_rgb_wo_45.png" />
+            <img alt="Android app on Google Play" src="img/orig/en_app_rgb_wo_45.png" />
           </a>
         </div>
       </div>
@@ -111,23 +119,36 @@
           <h4>HOW DOES IT WORK?</h4>
           <h1>ALANTU: THE GAME</h1>
           <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.</p>
-          <img class="hex-logo" src="img/alantu-small.png" />
+          <img class="hex-logo" src="img/orig/alantu-small.png" />
         </div>
 
         <div class="col-md-6">
           <div class="phone screen1">
-            <img class="feature-image lazyload" data-src="img/phone.png" src="dist/lq/phone.png" />
 
+            <img 
+              class="feature-image lazyload"  
+              src="img/lq/phone.png"  
+              data-srcset="img/lq/phone.png 100w img/small/phone.png 300w img/large/phone.png 600w img/x2/phone.png 900w" 
+              data-sizes="100vw" />
+
+              <!-- 
+              data-src="img/large/phone.png" 
+              -->
             <div id="screen1" class="screen">
-              <img class="lazyload" src="dist/lq/tutorial_1.png" data-src="img/tutorial_1.png" />
+
+              <img class="lazyload" 
+                src="img/lq/tutorial_1.png" 
+                data-src="img/orig/tutorial_4.png" 
+                data-sizes="auto" />
+
               <p>You can either be a Hunter or a Sleeper. A Hunter manages a grid of sleepers.</p>
             </div>
             <div id="screen2" class="screen">
-              <img src="img/tutorial_2.png" />
+              <img src="img/orig/tutorial_2.png" />
               <p>You´ll be able to select which project your grid wants to contribute.</p>
             </div>
             <div id="screen3" class="screen">
-              <img src="img/tutorial_3.png" />
+              <img src="img/orig/tutorial_3.png" />
               <p>You will progress in the game by processing workunits from the projects you selected.</p>
             </div>
 
@@ -155,14 +176,14 @@
       <div class="container">
         <div class="row">
           <div class="copy col-md-5 col-md-push-6">
-            <img class="hex-logo" src="img/ico1.png" />
+            <img class="hex-logo" src="img/orig/ico1.png" />
             <h1>PUSH THE  HUMAN MACHINE TO THE NEXT LEVEL</h1>
             <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.</p>
             <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.</p>
             <hr />
           </div>
           <div class="col-md-7 col-md-pull-6">
-            <img class="feature-image" src="img/phone3.png" />
+            <img class="feature-image" src="img/orig/phone3.png" />
           </div>
         </div>
       </div>
@@ -172,19 +193,19 @@
 
   <section id="fifth-section">
     <div class="container text-center">
-      <img class="logo" src="img/alantu-vertical.png" />
+      <img class="logo" src="img/orig/alantu-vertical.png" />
       <h2>Powered by <b>BOINC</b><br />
         Open Community Platform 
       </h2>
       <p class="social">
-        <img class="twitter-logo" src="img/twitter.png">
-        <img class="facebook-logo" src="img/facebook.png">
+        <img class="twitter-logo" src="img/orig/twitter.png">
+        <img class="facebook-logo" src="img/orig/facebook.png">
       </p>
     </div>
   </section>
 
   <footer class="clearfix">
-    <img class="pull-left" src="img/logo_small.png" />
+    <img class="pull-left" src="img/orig/logo_small.png" />
     <p>Copyright @ 2014 ALANTU. All rights reserved.</p>
   </footer>
 

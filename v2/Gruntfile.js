@@ -27,12 +27,20 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ['**.png'],
-          cwd: 'img/',
-          custom_dest: 'dist/{%= name %}'
+          cwd: 'img/orig',
+          custom_dest: 'img/{%= name %}'
         }]
       }
     },
 
+    img: {
+      task1: {
+        src: 'img',
+        dest: 'dist/compressed'
+      },
+    },
+
+    /*
     imagemin: {
       png: {
         options: {
@@ -41,17 +49,19 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'img/',
-          src: ['**.png'],
+          src: ['**.jpg'],
           dest: 'dist/compressed',
-          ext: '.png'
+          ext: '.jpg'
         }]
       }
     }
+   */
   });
 
   grunt.loadNpmTasks('grunt-responsive-images');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  //grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-img');
 
   grunt.registerTask('default', ['responsive_images']);
-  grunt.registerTask('imagemin', ['imagemin']);
+  grunt.registerTask('img', ['img']);
 };

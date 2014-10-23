@@ -67,14 +67,9 @@ a, a:hover {
   font-family: SofiaProRegular;
 }
 
-/*
-section {
-  min-height: 100%;
-}
-*/
-
 .feature-image {
   max-width: 100%;
+  width: 100%;
 }
 
 #header {
@@ -204,7 +199,7 @@ section {
 
 #third-section {
   min-height: 900px;
-  background: url(../img/mesh.png);
+  background: url(../img/orig/mesh.png);
   margin-top: -100px;
   padding-top: 150px;
 }
