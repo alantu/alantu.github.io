@@ -392,6 +392,10 @@ footer p {
   max-width: 70px;
 }
 
+.lazyload {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   body {
     text-align: left;

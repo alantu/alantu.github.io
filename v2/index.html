@@ -83,7 +83,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <img class="feature-image" src="img/phone2.png" />
+          <img class="feature-image lazyload" src="dist/lq/phone2.png" data-src="img/phone2.png" data-sizes="auto" />
         </div>
         <div class="col-md-5 copy">
           <h4>ARE YOU READY TO JOIN?</h4>
@@ -116,10 +116,10 @@
 
         <div class="col-md-6">
           <div class="phone screen1">
-            <img class="feature-image" src="img/phone.png" />
+            <img class="feature-image lazyload" data-src="img/phone.png" src="dist/lq/phone.png" />
 
             <div id="screen1" class="screen">
-              <img src="img/tutorial_1.png" />
+              <img class="lazyload" src="dist/lq/tutorial_1.png" data-src="img/tutorial_1.png" />
               <p>You can either be a Hunter or a Sleeper. A Hunter manages a grid of sleepers.</p>
             </div>
             <div id="screen2" class="screen">
@@ -190,6 +190,7 @@
 
 </body>
 
+<script src="js/lazysizes.min.js" async=""></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/main.js"></script>
