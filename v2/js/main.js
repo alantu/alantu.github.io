@@ -36,7 +36,7 @@ $(".indicators li").click(function(e) {
   clearInterval(intervalId);
 });
 
-$('.screen').click(function() {
+$('.screen').on('swipe', function() {
   clearInterval(intervalId);
   next();
 });
