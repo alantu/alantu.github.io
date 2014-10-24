@@ -4,7 +4,15 @@
   <meta charset="utf-8">
   <title>Alantu Experiment</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" >
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -30,7 +38,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-logo" href=""><img src="img/orig/logo_small.png" /></a>
+          <a class="navbar-logo" href="">
+            <img src="img/orig/logo_small.png" />
+          </a>
         </div>
 
         <div id="navbar_collapse" class="navbar-collapse collapse">
@@ -51,7 +61,7 @@
         <div class="row">
           <div class="col-md-9">
 
-            <h1><img src="img/orig/logo_text.png" /></h1>
+            <h1><img id="header-title" src="img/orig/logo_text.png" /></h1>
             <h3>Processing the Future</h3>
 
             <form id="waitinglist" class="form-inline">
@@ -63,7 +73,7 @@
               </div>
             </form>
 
-            <a id="play_button" href=""><img src="img/orig/play_button.png" />Watch Video</a>
+            <a id="play_button" href="#" data-target="#video" data-video="//www.youtube.com/embed/yBJQRb3XMdc?showinfo=0&rel=0&autoplay=1"><img src="img/orig/play_button.png" />Watch Video</a>
 
           </div>
         </div>
@@ -88,7 +98,10 @@
           <img 
             class="feature-image lazyload" 
             src="img/lq/phone2.png" 
-              data-srcset="img/lq/phone2.png 100w, img/small/phone2.png 300w, img/large/phone2.png 600w, img/x2/phone2.png 900w" 
+            data-srcset="img/lq/phone2.png 100w, 
+                         img/small/phone2.png 300w, 
+                         img/large/phone2.png 600w, 
+                         img/x2/phone2.png 1024w" 
             data-sizes="auto" />
 
         </div>
@@ -128,7 +141,10 @@
             <img 
               class="feature-image lazyload"  
               src="img/lq/phone.png"  
-              data-srcset="img/lq/phone.png 100w, img/small/phone.png 300w, img/large/phone.png 600w, img/x2/phone.png 900w" 
+              data-srcset="img/lq/phone.png 100w, 
+                           img/small/phone.png 300w, 
+                           img/large/phone.png 600w, 
+                           img/x2/phone.png 900w" 
               data-sizes="auto" />
 
               <!-- 
@@ -137,9 +153,8 @@
             <div id="screen1" class="screen">
 
               <img class="lazyload" 
-                src="img/lq/tutorial_1.png" 
-                data-src="img/orig/tutorial_4.png" 
-                data-sizes="auto" />
+                src="img/lq/tutorial_4.png" 
+                data-src="img/orig/tutorial_4.png" />
 
               <p>You can either be a Hunter or a Sleeper. A Hunter manages a grid of sleepers.</p>
             </div>
@@ -183,7 +198,14 @@
             <hr />
           </div>
           <div class="col-md-7 col-md-pull-6">
-            <img class="feature-image" src="img/orig/phone3.png" />
+            <img 
+              class="feature-image lazyload"  
+              src="img/lq/phone3.png"  
+              data-srcset="img/lq/phone3.png 100w, 
+                           img/small/phone3.png 300w, 
+                           img/large/phone3.png 600w, 
+                           img/x2/phone3.png 900w" 
+              data-sizes="auto" />
           </div>
         </div>
       </div>
@@ -198,8 +220,12 @@
         Open Community Platform 
       </h2>
       <p class="social">
+      <a href="http://twitter.com/alantuapp">
         <img class="twitter-logo" src="img/orig/twitter.png">
+      </a>
+      <a href="http://facebook.com/alantuapp">
         <img class="facebook-logo" src="img/orig/facebook.png">
+        </a>
       </p>
     </div>
   </section>
@@ -208,6 +234,16 @@
     <img class="pull-left" src="img/orig/logo_small.png" />
     <p>Copyright @ 2014 ALANTU. All rights reserved.</p>
   </footer>
+
+  <div id="video" class="modal">
+    <div class="container">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" showinfo="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 

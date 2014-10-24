@@ -136,7 +136,11 @@ a, a:hover {
   overflow:hidden;
   height: inherit; width: 100%;
   color: #FFF;
-  padding-bottom: 160px;
+  padding-bottom: 200px;
+}
+
+#main-section #header-title {
+  max-width: 100%;
 }
 
 #main-section #play_button {
@@ -183,7 +187,7 @@ a, a:hover {
 }
 
 #second-section .feature-image {
-  max-width: 70%;
+  max-width: 420px;
   transform: rotateY(180deg);
 }
 
@@ -434,7 +438,7 @@ footer p {
 
 @media (min-width: 992px) {
   #waitinglist {
-    margin: 120px 0 150px;
+    margin: 100px 0;
   }
 
   #second-section .copy {
