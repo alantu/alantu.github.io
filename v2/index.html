@@ -98,10 +98,10 @@
           <img 
             class="feature-image lazyload" 
             src="img/lq/phone2.png" 
-            data-srcset="img/small/phone2.png 300w, 
-                         img/large/phone2.png 600w, 
-                         img/x2/phone2.png 1024w" 
-            data-sizes="auto" />
+            srcset="img/small/phone2.png 300w, 
+                   img/large/phone2.png 600w, 
+                   img/x2/phone2.png 1024w" 
+                   />
 
         </div>
 
@@ -140,20 +140,17 @@
             <img 
               class="feature-image lazyload"  
               src="img/lq/phone.png"  
-              data-srcset="img/lq/phone.png 100w, 
+              srcset="img/lq/phone.png 100w, 
                            img/small/phone.png 300w, 
                            img/large/phone.png 600w, 
                            img/x2/phone.png 900w" 
-              data-sizes="auto" />
+              sizes="auto" />
 
-              <!-- 
-              data-src="img/large/phone.png" 
-              -->
             <div id="screen1" class="screen">
 
               <img class="lazyload" 
                 src="img/lq/tutorial_4.png" 
-                data-src="img/orig/tutorial_4.png" />
+                srcset="img/orig/tutorial_4.png 300w" />
 
               <p>You can either be a Hunter or a Sleeper. A Hunter manages a grid of sleepers.</p>
             </div>
@@ -200,11 +197,11 @@
             <img 
               class="feature-image lazyload"  
               src="img/lq/phone3.png"  
-              data-srcset="img/lq/phone3.png 100w, 
-                           img/small/phone3.png 300w, 
-                           img/large/phone3.png 600w, 
-                           img/x2/phone3.png 900w" 
-              data-sizes="auto" />
+              srcset="img/lq/phone3.png 100w, 
+                     img/small/phone3.png 300w, 
+                     img/large/phone3.png 600w, 
+                     img/x2/phone3.png 900w" 
+              sizes="auto" />
           </div>
         </div>
       </div>
@@ -246,7 +243,10 @@
 
 </body>
 
+<!--
 <script src="js/lazysizes.min.js" async=""></script>
+-->
+<script src="js/respimage.min.js" async=""></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/jquery.mobile.js"></script>
 <script src="js/bootstrap.js"></script>
