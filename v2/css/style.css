@@ -93,7 +93,7 @@ a, a:hover {
 #topnav {
   background: transparent;
   border-color: transparent;
-  min-height: 100px;
+  min-height: 50px;
 }
 
 #topnav .navbar-header {
@@ -136,7 +136,7 @@ a, a:hover {
   overflow:hidden;
   height: inherit; width: 100%;
   color: #FFF;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
 }
 
 #main-section #header-title {
@@ -158,7 +158,7 @@ a, a:hover {
 }
 
 #waitinglist {
-  margin: 45px 0;
+  margin: 50px 0;
 }
 
 #waitinglist-email {
@@ -401,6 +401,10 @@ footer p {
     text-align: left;
   }
 
+  #main-section {
+    padding-bottom: 200px;
+  }
+
   #waitinglist {
     margin: 75px 0;
   }
@@ -409,11 +413,16 @@ footer p {
     width: 335px;
   }
 
+  #topnav {
+    min-height: 100px; 
+  }
+
   #topnav .navbar-nav > li > a {
     padding-top: 25px;
     padding-bottom: 25px;
     line-height: 19px;
   }
+
   #fourth-section hr {
     text-align: left;
     margin-left:0;
