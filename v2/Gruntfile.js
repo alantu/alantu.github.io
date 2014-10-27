@@ -31,37 +31,9 @@ module.exports = function(grunt) {
           custom_dest: 'img/{%= name %}'
         }]
       }
-    },
-
-    img: {
-      task1: {
-        src: 'img',
-        dest: 'dist/compressed'
-      },
-    },
-
-    /*
-    imagemin: {
-      png: {
-        options: {
-          optimizationLevel: 7
-        },
-        files: [{
-          expand: true,
-          cwd: 'img/',
-          src: ['**.jpg'],
-          dest: 'dist/compressed',
-          ext: '.jpg'
-        }]
-      }
     }
-   */
   });
 
   grunt.loadNpmTasks('grunt-responsive-images');
-  //grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-img');
-
   grunt.registerTask('default', ['responsive_images']);
-  grunt.registerTask('img', ['img']);
 };

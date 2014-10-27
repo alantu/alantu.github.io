@@ -14,11 +14,6 @@
 }
 
 @font-face {
-  font-family: SofiaProBold;
-  src: url(../fonts/SofiaProBold.ttf);
-}
-
-@font-face {
   font-family: SofiaProExtraLight;
   src: url(../fonts/SofiaProExtraLight.ttf);
 }
@@ -42,6 +37,7 @@ h1 {
 
 h2 {
   font-size: 22px;
+  line-height: 38px;
 }
 
 h3 {
@@ -174,12 +170,6 @@ a, a:hover {
 
 #second-section {
   margin-top: -100px;
-}
-
-#second-section .container {
-  /*
-  padding: 20px 0 0;
-  */
 }
 
 #second-section .copy {
@@ -357,7 +347,10 @@ a, a:hover {
 
 #fifth-section .logo {
   max-width: 150px;
-  margin-bottom: 15px;
+}
+
+#fifth-section .boinc {
+  width: 70px;
 }
 
 #fifth-section .social {

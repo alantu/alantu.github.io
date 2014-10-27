@@ -23,7 +23,7 @@
 
   <div id="header">
 
-    <video id="header-video" poster="poster.png" loop="loop" autoplay>
+    <video id="header-video" poster="img/orig/poster.png" loop="loop" autoplay>
       <source src="video/video.mp4">
     </video>
 
@@ -96,7 +96,7 @@
         <div class="col-md-5">
 
           <img 
-            class="feature-image lazyload" 
+            class="feature-image" 
             src="img/lq/phone2.png" 
             srcset="img/small/phone2.png 300w, 
                    img/large/phone2.png 600w, 
@@ -138,7 +138,7 @@
           <div class="phone screen1">
 s
             <img 
-              class="feature-image lazyload"  
+              class="feature-image"  
               src="img/lq/phone.png"  
               srcset="img/lq/phone.png 100w, 
                            img/small/phone.png 300w, 
@@ -148,8 +148,7 @@ s
 
             <div id="screen1" class="screen">
 
-              <img class="lazyload" 
-                src="img/lq/tutorial_4.png" 
+              <img src="img/lq/tutorial_4.png" 
                 srcset="img/orig/tutorial_4.png 300w" />
 
               <p>You can either be a Hunter or a Sleeper. A Hunter manages a grid of sleepers.</p>
@@ -195,7 +194,7 @@ s
           </div>
           <div class="col-md-7 col-md-pull-6">
             <img 
-              class="feature-image lazyload"  
+              class="feature-image"  
               src="img/lq/phone3.png"  
               srcset="img/lq/phone3.png 100w, 
                      img/small/phone3.png 300w, 
@@ -212,9 +211,12 @@ s
   <section id="fifth-section">
     <div class="container text-center">
       <img class="logo" src="img/orig/alantu-vertical.png" />
-      <h2>Powered by <b>BOINC</b><br />
-        Open Community Platform 
+      <h2>Powered by<br />
+        <a href="http://boinc.berkeley.edu/">
+          <img class="boinc" src="img/orig/boinc.png" />
+        </a>
       </h2>
+      <h5>Open Community Platform</h5>
       <p class="social">
       <a href="http://twitter.com/alantuapp">
         <img class="twitter-logo" src="img/orig/twitter.png">
@@ -243,9 +245,6 @@ s
 
 </body>
 
-<!--
-<script src="js/lazysizes.min.js" async=""></script>
--->
 <script src="js/respimage.min.js" async=""></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/jquery.mobile.js"></script>
