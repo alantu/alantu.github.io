@@ -177,8 +177,14 @@ a, a:hover {
 }
 
 #second-section .feature-image {
-  max-width: 420px;
+  max-width: 360px;
+
+  /*
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
+  */
 }
 
 .triangle {
@@ -304,6 +310,10 @@ a, a:hover {
   top: 8%;
   left: 25%;
   width: 50%;
+
+  -moz-transition: opacity .5s ease-in-out, top .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out, top .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out, top .5s ease-in-out;
   transition: opacity .5s ease-in-out, top .5s ease-in-out;
   opacity: 0;
 }
@@ -455,3 +465,10 @@ footer p {
     padding-top: 200px;
   }
 }
+
+/** Animations **/
+
+.copy.animated {
+  -webkit-animation-delay: .3s;
+}
+

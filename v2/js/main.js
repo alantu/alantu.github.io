@@ -67,3 +67,21 @@ $('button.arrow').click(function(e) {
     return false;
   }
 });
+
+$(window).scroll(function () {
+  var scrolled = $(window).scrollTop();
+  var o1 = $('#header-title').offset().top;
+
+  if(scrolled > o1) {
+    $('#second-section')
+      .find('.feature-image')
+        .removeClass('invisible')
+        .addClass('animated fadeInLeft');
+
+    $('#second-section')
+      .find('.copy')
+        .removeClass('invisible')
+        .addClass('animated fadeInRight');
+
+  }  
+});
