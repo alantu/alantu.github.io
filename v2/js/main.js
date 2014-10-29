@@ -130,5 +130,7 @@ $("video").each(function() {
       this.currentTime = 0;
       this.play();
     }, false);
+
+    this.play();
   }
 });
