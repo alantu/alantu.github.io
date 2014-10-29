@@ -181,6 +181,7 @@ a, a:hover {
 }
 
 #main-section {
+  text-align: center;
   position: relative;
   overflow:hidden;
   height: inherit; width: 100%;
@@ -253,7 +254,7 @@ a, a:hover {
 
 #third-section {
   min-height: 900px;
-  background: url(../img/orig/mesh2.png);
+  background: url(../img/orig/city.png);
   margin-top: -100px;
   padding-top: 150px;
 }
@@ -525,7 +526,6 @@ footer p {
   }
 
   #fourth-section .copy {
-    margin-bottom: -125px;
   }
 
   #fourth-section hr {
