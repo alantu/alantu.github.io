@@ -526,6 +526,7 @@ footer p {
   }
 
   #fourth-section .copy {
+    margin-bottom: -100px;
   }
 
   #fourth-section hr {
