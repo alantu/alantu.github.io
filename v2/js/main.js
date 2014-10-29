@@ -1,6 +1,9 @@
 
-var phoneScreenIndex = 0;
+/**
+ * Phone with sliding screens
+ */
 
+var phoneScreenIndex = 0;
 
 function next() {
   var index = (phoneScreenIndex++) % 3;
@@ -41,6 +44,10 @@ $('.screen').on('swipe', function() {
   next();
 });
 
+/**
+ * To show youtube video
+ */
+
 $('[data-target="#video"]').on('click', function (evt) {
   evt.preventDefault();
   var $target = $(evt.currentTarget),
@@ -67,6 +74,10 @@ $('button.arrow').click(function(e) {
     return false;
   }
 });
+
+/**
+ * Section marker in body and sticky navbar
+ */
 
 var bodyEl = $("body");
 var navbarHeight = $('.navbar-static-top').height();
@@ -105,4 +116,19 @@ $(window).on("scroll", function() {
         }
 
     });
+});
+
+/**
+ * Hack to make videos loop
+ */
+
+$("video").each(function() {
+  if (typeof this.loop == 'boolean') {
+      this.loop = true;
+  } else {
+    this.addEventListener('ended', function() {
+      this.currentTime = 0;
+      this.play();
+    }, false);
+  }
 });

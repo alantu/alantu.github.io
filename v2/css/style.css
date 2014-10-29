@@ -131,7 +131,7 @@ a, a:hover {
 }
 
 .fourth-section .navbar-fixed-top {
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(255, 255, 255, .05);
   /*
   border-bottom: 1px solid #000;
   */
@@ -313,14 +313,14 @@ a, a:hover {
   width: 100%;
 }
 
-#fourth-section .wrapper {
-  background: #f95d42;
-  margin-top: -1px;
-  padding: 145px 0 50px;
+#fourth-section .triangle polygon {
+  fill: #0A090A;
 }
 
-#fourth-section .triangle polygon {
-  fill: #f95d42;
+#fourth-section .wrapper {
+  background: #0A090A;
+  margin-top: -1px;
+  padding: 145px 0 0;
 }
 
 #fourth-section .hex-logo {
@@ -329,14 +329,29 @@ a, a:hover {
 
 #fourth-section .copy {
   text-align: center;
+  position: relative;
+  z-index: 9;
 }
 
 #fourth-section hr {
   margin: 30px auto;
   border-width: 3px;
   width: 90px;
+  border-color: #f95d42;
 }
 
+#fourth-section h1 {
+  color: #f95d42;
+}
+
+#fourth-section video {
+  width: 100%;
+  position: relative;
+  z-index: 8;
+  margin-top: 0;
+}
+
+/*
 #fourth-section .tablet {
   position: relative;
 }
@@ -354,6 +369,7 @@ a, a:hover {
   width: 100%;
   height: 100%;
 }
+*/
 
 .phone {
   margin: 0 auto;
@@ -417,7 +433,7 @@ a, a:hover {
 }
 
 #fifth-section {
-  background-color: #000;
+  background-color: #f95d42;
   padding: 150px 0;
   color: #FFF;
   min-height: 100%;
@@ -513,6 +529,10 @@ footer p {
     text-align: left;
     margin-left:0;
     */
+  }
+
+  #fourth-section video {
+    margin-top: -80px;
   }
 
   #third-section {
