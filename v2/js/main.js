@@ -134,3 +134,9 @@ $("video").each(function() {
     this.play();
   }
 });
+
+$("#fourth-section h1").click(function() {
+
+  $("#fourth-section video").get(0).play();
+
+});
