@@ -206,7 +206,7 @@
       <polygon points="0,0 100,20 0,20" />
     </svg>
     <div class="wrapper">
-      <div class="container">
+      <div class="container-fluid">
         <!--
         <div class="row">
           <div class="copy col-md-5 col-md-push-6 wow fadeInLeft2">
@@ -237,10 +237,20 @@
             <hr />
           </div>
 
-          <video id="product-video" loop autoplay>
-            <source src="video/Alantu_Mobile.webm" type="video/webm">
-            <source src="video/Alantu_Mobile.mp4" type="video/mp4">
-          </video>
+          <div class="video-container"> 
+            <video loop autoplay>
+              <source src="video/Alantu_Mobile.webm" type="video/webm">
+              <source src="video/Alantu_Mobile.mp4" type="video/mp4">
+              <img 
+                class="feature-image"  
+                src="img/lq/phone3.png"  
+                srcset="img/lq/phone3.png 100w, 
+                img/small/phone3.png 300w, 
+                img/large/phone3.png 600w, 
+                img/x2/phone3.png 900w" 
+                sizes="auto" />
+            </video>
+          </div>
         </div>
       </div>
       </div>
@@ -250,7 +260,7 @@
 
   <section id="fifth-section">
     <div class="container text-center">
-      <img class="logo" src="img/orig/alantu-vertical.png" />
+      <img class="logo" src="img/orig/alantu-vertical2.png" />
       <h2>Powered by<br />
         <a href="http://boinc.berkeley.edu/">
           <img class="boinc" src="img/orig/boinc2.png" />
