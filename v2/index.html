@@ -13,9 +13,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  <link href="css/animate.css" rel="stylesheet" >
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -101,7 +101,10 @@
               </div>
             </form>
 
-            <a id="play_button" href="#" data-target="#video" data-video="//www.youtube.com/embed/yBJQRb3XMdc?showinfo=0&rel=0&autoplay=1"><img src="img/orig/play_button.png" />WATCH VIDEO</a>
+            <a id="play_button" href="#" data-target="#video" data-video="//www.youtube.com/embed/yBJQRb3XMdc?showinfo=0&rel=0&autoplay=1">
+              <span>&#9658;</span>
+              <img src="img/orig/play_button.png" />WATCH VIDEO
+            </a>
 
           </div>
         </div>
@@ -124,6 +127,7 @@
         <div class="col-md-5">
 
           <img class="feature-image wow fadeInLeft2" 
+            data-wow-offset="300"
             src="img/lq/phone2.png" 
             srcset="img/small/phone2.png 300w, 
                    img/large/phone2.png 600w, 
@@ -131,7 +135,7 @@
 
         </div>
 
-        <div class="col-md-5 copy wow fadeInRight2">
+        <div class="col-md-5 copy wow fadeInRight2" data-wow-offset="300">
           <h4>ARE YOU READY TO JOIN?</h4>
           <h1>PUSH THE  <br />HUMAN <img src="img/orig/flecha.png" /> MACHINE <br />TO THE NEXT LEVEL.</h1>
           <p>We are going through a crucial milestone in the history of mankind. Of the 5.000 generations of human beings to ever walk the earth, we may be those who live in this century that ultimately determine OUR DESTINY.</p>
@@ -245,8 +249,15 @@
           </div>
 
           <div class="video-container"> 
-            <video loop autoplay>
-              <source src="video/optimized/Alantu_Mobile.mp4">
+            <video controls>
+              <source src="video/optimized/Alantu_Mobile.mp4" type="video/mp4">
+
+              <!--
+              <object width="100%" height="100%" type="application/x-shockwave-flash" data="player.swf">
+                <param name="movie" value="player.swf">
+                <param name="flashvars" value="autostart=true&amp;controlbar=hide&amp;file=video/optimized/Alantu_Mobile.mp4">
+              </object>
+              -->
             </video>
           </div>
         </div>
