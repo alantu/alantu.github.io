@@ -469,7 +469,7 @@ a, a:hover {
 
 #fifth-section {
   background-color: #f95d42;
-  padding: 50px 0;
+  padding: 50px 0 60px;
   color: #FFF;
 
   /** FIREFOX **/
@@ -480,8 +480,18 @@ a, a:hover {
   max-width: 600px;
 }
 
+#fifth-section strong {
+  font-family: SofiaProBold;
+  font-size: 12px !important;
+  /*
+  margin-right: 15px;
+  */
+  line-height: 32px;
+}
+
 #fifth-section .logo {
   max-width: 150px;
+  margin-bottom: 50px;
 }
 
 #fifth-section .boinc {
@@ -489,20 +499,21 @@ a, a:hover {
 }
 
 #fifth-section .social {
-  margin-top: 30px;
+  display: inline-block; 
 }
 
 #fifth-section .social img {
   width: 30px;
 }
 
-#fifth-section .twitter-logo {
-  margin-right: 25px;
+#fifth-section .social a {
+  margin-left: 15px;
 }
 
 footer {
+  border-top: 1px solid #f97443;
   text-align: center;
-  background-color: #111;
+  background-color: #f85d42;
   color: #DDD;
 }
 
@@ -512,6 +523,8 @@ footer img {
 }
 
 footer p {
+  font-family: SofiaProRegular;
+  font-size: 12px;
   margin: 5px 0;
 }
 
