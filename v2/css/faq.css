@@ -1,3 +1,7 @@
+h3 {
+  letter-spacing: 6px;
+}
+
 #faq-title {
   margin: 60px 0;
 
@@ -28,4 +32,10 @@ ul#faq-nav {
 
 .question {
   margin-bottom: 60px;
+}
+
+.legal {
+  margin-bottom: 60px;
+  color: #777;
+
 }
