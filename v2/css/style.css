@@ -533,12 +533,21 @@ footer p {
 
 @media (max-width: 768px) {
 
+  #main-section #header-logo {
+    margin-bottom: 40px;
+    margin-top: -30px;
+  }
+
+  #third-section {
+    height: 924px;
+  }
+
   #third-section .feature-image {
     max-width: 205px;
   }
 
   #fourth-section .wrapper {
-    padding-top: 125px; 
+    padding-top: 35px; 
   }
 
   #fourth-section .phone {
