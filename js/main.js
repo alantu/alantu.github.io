@@ -153,10 +153,13 @@ window.onload = function() {
   var video1 = document.getElementById('header-video');
   var video2 = document.getElementById('product-video');
   
+  var source1 = $(video1).find("source");
+  source1.attr("src", source1.data("src"));
   video1.load();
   video1.play();
 
+  var source2 = $(video2).find("source");
+  source2.attr('src', source2.data('src'));
   video2.load();
   video2.play();
-
 };
