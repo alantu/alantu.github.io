@@ -122,25 +122,7 @@ $(window).on("scroll", function() {
             delete classes[className];
             bodyEl.removeClass(className);
         }
-
     });
-});
-
-/**
- * Hack to make videos loop
- */
-
-$("video").each(function() {
-  if (typeof this.loop == 'boolean') {
-      this.loop = true;
-  } else {
-    this.addEventListener('ended', function() {
-      this.currentTime = 0;
-      this.play();
-    }, false);
-
-    this.play();
-  }
 });
 
 $("#fourth-section h1").click(function() {
@@ -148,3 +130,33 @@ $("#fourth-section h1").click(function() {
   $("#fourth-section video").get(0).play();
 
 });
+
+window.onload = function() {
+
+  /**
+   * Hack to make videos loop
+   */
+
+  $("video").each(function() {
+    if (typeof this.loop == 'boolean') {
+      this.loop = true;
+    } else {
+      this.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+      }, false);
+
+      this.play();
+    }
+  });
+
+  var video1 = document.getElementById('header-video');
+  var video2 = document.getElementById('product-video');
+  
+  video1.load();
+  video1.play();
+
+  video2.load();
+  video2.play();
+
+};
