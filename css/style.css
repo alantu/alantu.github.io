@@ -85,6 +85,8 @@ a, a:hover {
   right:0;
   min-width: 100%;
   z-index: -1;
+  background-image: url(../img/lq/poster.png);
+  background-size: cover;
 }
 
 .navbar-fixed-top {
@@ -477,7 +479,7 @@ a, a:hover {
 }
 
 #fifth-section .container {
-  max-width: 600px;
+  max-width: 890px;
 }
 
 #fifth-section strong {
@@ -491,7 +493,7 @@ a, a:hover {
 
 #fifth-section .logo {
   max-width: 150px;
-  margin-bottom: 50px;
+  margin-bottom: -5px;
 }
 
 #fifth-section .boinc {
@@ -570,6 +572,11 @@ footer p {
 
   #fourth-section .wrapper {
     padding-bottom: 50px; 
+  }
+
+  #fifth-section .logo {
+    margin-bottom: 15px;
+  
   }
 }
 
