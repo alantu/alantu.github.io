@@ -36,7 +36,7 @@
 
 <body>
   <div id="header">
-    <video id="header-video" loop autoplay>
+    <video id="header-video" poster="img/small/poster.png" loop autoplay>
       <source src="video/optimized/Autos_Website.mp4">
     </video>
 
@@ -116,7 +116,7 @@
             </form>
 
             <a id="play_button" href="#" data-target="#video" data-video="//www.youtube.com/embed/b4ARsu4ygwc?showinfo=0&rel=0&autoplay=1">
-              <span>&#9658;</span>
+              <img class="play-icon" src="img/orig/play.png" />
               <img src="img/orig/play_button.png" />WATCH VIDEO
             </a>
 
@@ -219,39 +219,43 @@
 
           </div>
 
-          <div class="hidden-sm phone screen1">
-            <img 
-            class="feature-image"  
-            src="img/small/phone.png"  
-            srcset="img/lq/phone.png 100w, 
-            img/small/phone.png 300w, 
-            img/large/phone.png 600w, 
-            img/x2/phone.png 900w" 
-            sizes="auto" />
+          <div id="phone-container" class"hidden-sm">
+            <div class="phone screen1">
+              <img 
+                class="feature-image"  
+                src="img/small/phone.png"  
+                srcset="img/lq/phone.png 100w, 
+                img/small/phone.png 300w, 
+                img/large/phone.png 600w, 
+                img/x2/phone.png 900w" 
+                sizes="auto" />
 
-            <div id="screen1" class="screen">
+              <div id="screen1" class="screen">
 
-              <img src="img/lq/tutorial_4.png" 
-              srcset="img/orig/tutorial_4.png 300w" />
+                <img src="img/lq/tutorial_4.png" 
+                srcset="img/orig/tutorial_4.png 300w" />
 
-              <p>You can either be a Hunter or a Sleeper. A Hunter manages a grid of sleepers.</p>
-            </div>
-            <div id="screen2" class="screen">
-              <img src="img/orig/tutorial_2.png" />
-              <p>You´ll be able to select which project your grid wants to contribute.</p>
-            </div>
-            <div id="screen3" class="screen">
-              <img src="img/orig/tutorial_3.png" />
-              <p>You will progress in the game by processing workunits from the projects you selected.</p>
-            </div>
+                <p>You can either be a Hunter or a Sleeper. A Hunter manages a grid of sleepers.</p>
+              </div>
+              <div id="screen2" class="screen">
+                <img src="img/orig/tutorial_2.png" />
+                <p>You´ll be able to select which project your grid wants to contribute.</p>
+              </div>
+              <div id="screen3" class="screen">
+                <img src="img/orig/tutorial_3.png" />
+                <p>You will progress in the game by processing workunits from the projects you selected.</p>
+              </div>
 
-            <ol class="indicators">
-              <li class="active"></li>
-              <li></li>
-              <li></li>
-            </ol>
+              <ol class="indicators">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+              </ol>
+            </div> <!-- /.phone -->
 
-          </div> <!-- /.phone -->
+            <a class="play-tutorial" href=""><img src="img/orig/play.png" /> Play Tutorial</a>
+          </div> <!-- /#tutorial -->
+
         </div>
       </div>
     </div>

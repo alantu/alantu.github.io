@@ -25,7 +25,15 @@ function showScreen(index) {
     .addClass("screen" + (index + 1));
 }
 
-var intervalId = setInterval(next, 5000);
+var intervalId;
+next();
+$('.play-tutorial').click(function(e) {
+  e.stopPropagation();e.preventDefault();
+
+  next();
+  clearInterval(intervalId);
+  intervalId = setInterval(next, 4000);
+});
 
 $(".indicators li").click(function(e) {
   var index = $(this).index();

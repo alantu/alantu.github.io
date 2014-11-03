@@ -85,8 +85,7 @@ a, a:hover {
   right:0;
   min-width: 100%;
   z-index: -1;
-  background-image: url(../img/lq/poster.png);
-  background-size: cover;
+  background-color: #AAA;
 }
 
 .navbar-fixed-top {
@@ -209,11 +208,9 @@ a, a:hover {
   position: relative;
 }
 
-#main-section #play_button span {
-  font-family: sans-serf;
+#main-section .play-icon {
   position: absolute;
-  font-size: 16px;
-  top: 7px;
+  top: 10px;
   left: 10px;
 }
 
@@ -413,6 +410,7 @@ a, a:hover {
   position: relative;
   min-width: 300px;
   max-width: 370px;
+  margin-bottom: 25px;
 }
 
 .phone .screen {
@@ -467,6 +465,14 @@ a, a:hover {
 .tutorial2 #tutorial2,
 .tutorial3 #tutorial3 {
   display: block; 
+}
+
+#phone-container .play-tutorial {
+  margin-top: 15px;
+}
+
+#phone-container a.play-tutorial:hover {
+  text-decoration: none;
 }
 
 #fifth-section {
@@ -615,7 +621,7 @@ footer p {
     */
   }
 
-  #fourth-section .phone {
+  #fourth-section #phone-container {
     display: none !important;
   }
 
