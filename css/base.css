@@ -69,13 +69,6 @@ a, a:hover {
   width: 100%;
 }
 
-#header {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
 .navbar-fixed-top {
   -webkit-transition: top 0.15s;
   -o-transition: top 0.15s;
@@ -143,6 +136,49 @@ a, a:hover {
   text-decoration: underline;
 }
 
+#fifth-section {
+  background-color: #f95d42;
+  padding: 50px 0 60px;
+  color: #FFF;
+
+  /** FIREFOX **/
+  clear: both;
+}
+
+#fifth-section .container {
+  max-width: 890px;
+}
+
+#fifth-section strong {
+  font-family: SofiaProBold;
+  font-size: 12px !important;
+  /*
+  margin-right: 15px;
+  */
+  line-height: 32px;
+}
+
+#fifth-section .logo {
+  max-width: 150px;
+  margin-bottom: -5px;
+}
+
+#fifth-section .boinc {
+  width: 70px;
+}
+
+#fifth-section .social {
+  display: inline-block; 
+}
+
+#fifth-section .social img {
+  width: 30px;
+}
+
+#fifth-section .social a {
+  margin-left: 15px;
+}
+
 footer {
   border-top: 1px solid #f97443;
   text-align: center;
@@ -165,7 +201,287 @@ footer p {
   width: 100%;
 }
 
+/** 
+ * Class used for enabling/disabling anims
+ */
 .anim {
   visibility: visible;
 }
 
+@media (max-width: 768px) {
+
+  #fifth-section .logo {
+    margin-bottom: 15px;
+  
+  }
+}
+
+@media (min-width: 768px) {
+
+  .navbar .navbar-nav > li > a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    line-height: 19px;
+  }
+
+  #third-section {
+    /*
+    padding-top: 200px;
+    */
+  }
+
+  #fifth-section {
+    /*
+    padding: 220px 0;
+    */
+  }
+}
+
+@media (min-width: 992px) {
+
+}
+
+
+/** Custom Animations **/
+
+@-webkit-keyframes fadeInUp2{
+  0%{
+    opacity:0;
+    -webkit-transform:translateY(200px);
+    transform:translateY(200px)
+  }
+
+  100%{
+    opacity:1;
+    -webkit-transform:translateY(0);
+    transform:translateY(0)
+  }
+
+}
+
+@keyframes fadeInUp2{
+  0%{
+    opacity:0;
+    -webkit-transform:translateY(200px);
+    -ms-transform:translateY(200px);
+    transform:translateY(200px)
+  }
+
+  100%{
+    opacity:1;
+    -webkit-transform:translateY(0);
+    -ms-transform:translateY(0);
+    transform:translateY(0)
+  }
+
+}
+
+.fadeInUp2{
+  -webkit-animation-name:fadeInUp2;
+  animation-name:fadeInUp2;
+  -webkit-animation-delay:0s;
+  animation-delay:0s
+}
+
+@-webkit-keyframes fadeInLeft2{
+  0%{
+    opacity:0;
+    -webkit-transform:translateX(-200px);
+    transform:translateX(-200px)
+  }
+
+  100%{
+    opacity:1;
+    -webkit-transform:translateX(0);
+    transform:translateX(0)
+  }
+
+}
+
+@keyframes fadeInLeft2{
+  0%{
+    opacity:0;
+    -webkit-transform:translateX(-200px);
+    -ms-transform:translateX(-200px);
+    transform:translateX(-200px)
+  }
+
+  100%{
+    opacity:1;
+    -webkit-transform:translateX(0);
+    -ms-transform:translateX(0);
+    transform:translateX(0)
+  }
+
+}
+
+.fadeInLeft2{
+  -webkit-animation-name:fadeInLeft2;
+  animation-name:fadeInLeft2;
+  -webkit-animation-delay:0s;
+  animation-delay:0s
+}
+
+@-webkit-keyframes fadeInRight2{
+  0%{
+    opacity:0;
+    -webkit-transform:translateX(200px);
+    transform:translateX(200px)
+  }
+
+  100%{
+    opacity:1;
+    -webkit-transform:translateX(0);
+    transform:translateX(0)
+  }
+
+}
+
+@keyframes fadeInRight2{
+  0%{
+    opacity:0;
+    -webkit-transform:translateX(200px);
+    -ms-transform:translateX(200px);
+    transform:translateX(200px)
+  }
+
+  100%{
+    opacity:1;
+    -webkit-transform:translateX(0);
+    -ms-transform:translateX(0);
+    transform:translateX(0)
+  }
+
+}
+
+.fadeInRight2{
+  -webkit-animation-name:fadeInRight2;
+  animation-name:fadeInRight2;
+  -webkit-animation-delay:0s;
+  animation-delay:0s
+}
+
+@-webkit-keyframes fadeInDown2{
+  0%{
+    opacity:0;
+    -webkit-transform:translateY(-200px);
+    transform:translateY(-200px)
+  }
+
+  100%{
+    opacity:1;
+    -webkit-transform:translateY(0);
+    transform:translateY(0)
+  }
+
+}
+
+@keyframes fadeInDown2{
+  0%{
+    opacity:0;
+    -webkit-transform:translateY(-200px);
+    -ms-transform:translateY(-200px);
+    transform:translateY(-200px)
+  }
+
+  100%{
+    opacity:1;
+    -webkit-transform:translateY(0);
+    -ms-transform:translateY(0);
+    transform:translateY(0)
+  }
+
+}
+
+.fadeInDown2{
+  -webkit-animation-name:fadeInDown2;
+  animation-name:fadeInDown2;
+  -webkit-animation-delay:0s;
+  animation-delay:0s
+}
+
+@-webkit-keyframes fadeOutSimpleOut{
+  0%{
+    opacity:1
+  }
+
+  100%{
+    opacity:0
+  }
+
+}
+
+@keyframes fadeOutSimpleOut{
+  0%{
+    opacity:1
+  }
+
+  100%{
+    opacity:0
+  }
+
+}
+
+/**
+ * Custom css per device
+ */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
