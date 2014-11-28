@@ -14,13 +14,12 @@ p {
 #header {
   background-image: url(../img/orig/poster.png);
   background-size: cover;
-  min-height: initial;
-  height: 445px;
+  min-height: 445px;
   color: #FFF;
 }
 
 #main-section {
-  padding-top: 105px;
+  padding-top: 105px 0;
 }
 
 #main-section button#early-access {
