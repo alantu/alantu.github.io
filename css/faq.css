@@ -1,10 +1,14 @@
 h3 {
-  letter-spacing: 6px;
+  letter-spacing: .1em;
+  font-size: 2em;
+}
+
+p {
+  font-family: SofiaProExtraLight;
 }
 
 #faq-title {
   margin: 60px 0;
-
 }
 
 .navbar a {
@@ -20,10 +24,13 @@ ul#faq-nav {
   padding-top: 20px;
 }
 
+li {
+  list-style-type: none;
+}
+
 #faq-nav li > a {
   color: #f95d42;
-  font-size: 24px;
-
+  font-size: 2em;
 }
 
 #questions {
@@ -31,11 +38,10 @@ ul#faq-nav {
 }
 
 .question {
-  margin-bottom: 60px;
+  margin-bottom: 5em;
 }
 
 .legal {
-  margin-bottom: 60px;
+  margin-bottom: 5em;
   color: #777;
-
 }

@@ -24,39 +24,46 @@ html {
 
 body {
   font-family: SofiaProExtraLight;
-  font-size: 14px;
+  font-size: 1em;
   width: 100%;
   height: 100%;
   text-align: center;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 3.3em;
   font-family:SofiaProBold;
 }
 
 h2 {
-  font-size: 22px;
-  line-height: 38px;
+  font-size: 2.8em;
 }
 
 h3 {
-  font-size: 22px;
-  letter-spacing: 8px;
-  line-height: 32px;
+  font-size: 2.3em;
+  letter-spacing: 0.5em;
+  line-height: initial;
+  margin-bottom: .9em;
+  margin-top: 1.8em;
 }
 
 h4 {
   font-family: SofiaProRegular;
   color: #fe5e44;
   letter-spacing: 0.4em;
-  font-size: 14px;
+  font-size: 1.6em;
 }
 
 p {
   font-family: SofiaProLight;
-  line-height: 26px;
-  font-size: 1em;
+  line-height: 1.7em;
+  font-size: 1.3em;
+  letter-spacing: .08em;
+}
+
+li {
+  font-size: 1.4em;
+  line-height: 1.7em;
 }
 
 a, a:hover {
@@ -151,11 +158,11 @@ a, a:hover {
 
 #fifth-section strong {
   font-family: SofiaProBold;
-  font-size: 12px !important;
+  font-size: 1em !important;
   /*
   margin-right: 15px;
   */
-  line-height: 32px;
+  line-height: 2.7em;
 }
 
 #fifth-section .logo {
@@ -193,7 +200,7 @@ footer img {
 
 footer p {
   font-family: SofiaProRegular;
-  font-size: 12px;
+  font-size: 1em;
   margin: 5px 0;
 }
 
@@ -221,19 +228,7 @@ footer p {
   .navbar .navbar-nav > li > a {
     padding-top: 25px;
     padding-bottom: 25px;
-    line-height: 19px;
-  }
-
-  #third-section {
-    /*
-    padding-top: 200px;
-    */
-  }
-
-  #fifth-section {
-    /*
-    padding: 220px 0;
-    */
+    line-height: 1.6em;
   }
 }
 

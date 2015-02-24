@@ -4,15 +4,14 @@ h1 {
 
 h2 {
   font-family: SofiaProRegular;
-  font-size: 30px;
-  line-height: 60px;
+  font-size: 2.2em;
+  line-height: 5em;
 }
 
 p {
   font-family: SofiaProExtraLight;
-  font-size: 1.5em;
-  line-height: 46px;
-  margin: 30px 0;
+  line-height: 2em;
+  margin: 2.2em 0;
 }
 
 #header {
@@ -35,20 +34,21 @@ p {
 }
 
 #second-section h2 {
-  margin: 5px 0 0;
+  margin: .5em 0 0;
+  line-height: 3em;
 }
 
 p.quote {
-  font-size: 32px;
+  font-size: 2.7em;
   font-style: italic;
-  margin: 50px 0;
+  margin: 1em 0;
 }
 
 #second-section .hexa-logo {
-  height: 70px;
+  height: 5.8em;
 }
 
 #second-section .team .hexa-logo {
-  margin-top: 40px;
+  margin-top: 3.3em;
 }
 
