@@ -25,7 +25,30 @@ function showScreen(index) {
     .addClass("screen" + (index + 1));
 }
 
+/**
+ * Tell if an element is on the viewport
+ */
+
+function inViewport(el) {
+  var r, html;
+
+  if ( !el || 1 !== el.nodeType ) { 
+    return false; 
+  }
+
+  html = document.documentElement;
+  r = el.getBoundingClientRect();
+
+  return ( !!r && 
+          r.bottom >= 0 && r.right >= 0 && 
+          r.top <= html.clientHeight && 
+          r.left <= html.clientWidth 
+         );
+
+}
+
 var intervalId;
+
 next();
 $('.play-tutorial').click(function(e) {
   e.stopPropagation();e.preventDefault();
@@ -84,6 +107,48 @@ $('button.arrow').click(function(e) {
 });
 
 /**
+ * product video started
+ */
+
+var startedProductVideo = false;
+
+/**
+ * product video
+ */
+
+var productVideo = document.getElementById('product-video');
+
+/**
+ * load product video
+ */
+
+function loadProductVideo() {
+  if (!startedProductVideo && inViewport(productVideo)) {
+    var src = $(productVideo).find("source");
+
+    src.attr('src', src.data('src'));
+    productVideo.load();
+    productVideo.play();
+    startedProductVideo = true;
+
+    console.log('loaded product video');
+  }
+}
+
+/**
+ * loadHeaderVideo
+ */
+
+function loadHeaderVideo() {
+  var headerVideo = document.getElementById('header-video');
+  var source1 = $(headerVideo).find("source");
+
+  source1.attr("src", source1.data("src"));
+  headerVideo.load();
+  headerVideo.play();
+}
+
+/**
  * Section marker in body and sticky navbar
  */
 
@@ -92,74 +157,60 @@ var navbarHeight = $('.navbar-static-top').height();
 var _closed = true;
 
 $(window).on("scroll", function() {
-    var scrollTop = $(this).scrollTop();
+  var scrollTop = $(this).scrollTop();
 
-    if (scrollTop > (navbarHeight + 10)) {
-      if (_closed) {
-        $('.navbar-fixed-top')
-          .removeClass('closed');
-
-        _closed = false;
-      }
-    } else if (!_closed) {
+  if (scrollTop > (navbarHeight + 10)) {
+    if (_closed) {
       $('.navbar-fixed-top')
-        .addClass('closed');
+      .removeClass('closed');
 
-      _closed = true;
+      _closed = false;
     }
+  } else if (!_closed) {
+    $('.navbar-fixed-top')
+    .addClass('closed');
 
-    var classes = {}; 
-    $("section").each(function() {
-        var el = $(this),
-            className = el.attr("id");
+    _closed = true;
+  }
 
-        if (!classes[className] && 
-            el.offset().top < scrollTop) {
+  var classes = {}; 
 
-            classes[className] = 1;
-            bodyEl.addClass(className);  
-        } else {
-            delete classes[className];
-            bodyEl.removeClass(className);
-        }
-    });
-});
+  $("section").each(function() {
+    var el = $(this),
+    className = el.attr("id");
 
-$("#fourth-section h1").click(function() {
+    if (!classes[className] && 
+        el.offset().top < scrollTop) {
 
-  $("#fourth-section video").get(0).play();
-
-});
-
-window.onload = function() {
-
-  /**
-   * Hack to make videos loop
-   */
-
-  $("video").each(function() {
-    if (typeof this.loop == 'boolean') {
-      this.loop = true;
+      classes[className] = 1;
+      bodyEl.addClass(className);  
     } else {
-      this.addEventListener('ended', function() {
-        this.currentTime = 0;
-        this.play();
-      }, false);
-
-      this.play();
+      delete classes[className];
+      bodyEl.removeClass(className);
     }
   });
 
-  var video1 = document.getElementById('header-video');
-  var video2 = document.getElementById('product-video');
-  
-  var source1 = $(video1).find("source");
-  source1.attr("src", source1.data("src"));
-  video1.load();
-  video1.play();
+  loadProductVideo();
+});
 
-  var source2 = $(video2).find("source");
-  source2.attr('src', source2.data('src'));
-  video2.load();
-  video2.play();
-};
+
+// Hack to make videos loop
+$("video").each(function() {
+  if (typeof this.loop == 'boolean') {
+    this.loop = true;
+  } else {
+    this.addEventListener('ended', function() {
+      this.currentTime = 0;
+      this.play();
+    }, false);
+
+    this.play();
+  }
+});
+
+loadHeaderVideo();
+loadProductVideo();
+
+$("#fourth-section h1").click(function() {
+  $("#fourth-section video").get(0).play();
+});
