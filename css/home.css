@@ -54,6 +54,14 @@
   font-size: 1em;
   font-family: SofiaProBold;
   position: relative;
+  text-transform: uppercase;
+}
+
+#main-section #play_button span {
+  display: inline-block;
+  font-size: 1em;
+  font-family: SofiaProBold;
+  position: relative;
 }
 
 #main-section .play-icon {
@@ -102,6 +110,7 @@
   padding: 0.8em 1em;
   position: relative;
   border-radius: 0;
+  text-transform: uppercase;
 }
 
 #second-section {
@@ -187,6 +196,7 @@
 
 #third-section h4 {
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 #third-section p {
@@ -264,6 +274,7 @@
 #fourth-section h2 {
   margin-bottom: 50px;
   font-family:SofiaProBold;
+  text-transform: uppercase;
 }
 
 #fourth-section .item {
@@ -281,7 +292,7 @@
 #fourth-section h3 {
   font-family: SofiaProRegular;
   color: #f95d42;
-
+  text-transform: uppercase;
 }
 
 #fourth-section .hexa {

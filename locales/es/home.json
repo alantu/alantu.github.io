@@ -1,0 +1,55 @@
+{
+  "app": {
+    "name": "Alantu"
+  },
+  "nav": {
+    "home": "HOME",
+    "faq": "FAQS",
+    "about": "NOSOTROS"
+  },
+
+  "get-early-access": "Obtener Acceso Temprano",
+
+  "watch-video": "Ver Video",
+
+  "A": {
+    "title": "Lleva al Próximo Nivel la Relación entre Humano y Máquina",
+    "subtitle": "Estás Listo?",
+    "text": "Estamos atravesando un hito crucial en la historia de la humanidad. De las 5000 generaciones de humanos que vivieron en la tierra, posiblemente los que vivan en este siglo los sean los que determinen NUESTRO DESTINO."
+  },
+
+  "B": {
+    "title-1": "Personas",
+    "text-1": "Pueden conceptualizar problemas, pero muchos de ellos siguen aun sin poder ser resueltos.",
+    "title-2": "Computadoras",
+    "text-2": "Pueden resolver lo que los humanos no podemos, pero la capacidad de cómputo es un recurso escaso."
+  },
+
+  "C": {
+    "title": "Nuestra App",
+    "subtitle": "Cómo Funciona?",
+    "text": "Fácil, cuanto más tiempo contribuyas, más chances vas a tener de ser recompensado. Para crecer en el juego necesitas agregar mas dispositivos, logrando incrementar tu capacidad de procesamiento (dispositivos propios y de terceros)."
+  },
+
+  "D": {
+    "title": "Tu Smartphone Puede Alimentar una Red de Computadoras Destinadas a Resolver los Principales Problemas del Mundo",
+
+    "hunt": {
+      "title": "Cazar",
+      "text": "Tráe nuevos dispositivos a tu red. Un millón de smartphones representan una enorme capacidad de cómputo."
+    },
+
+    "share": {
+      "title": "Compartir",
+      "text": "Dona to capacidad de cómputo ociosa para alimentar proyectos de investigación."
+    },
+
+    "reward": {
+      "title": "Recompensar",
+      "text": "Colabora en proyectos, hace crecer tu red y obtén recompensas."
+    }
+
+  }
+
+}
+

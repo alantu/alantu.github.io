@@ -1,0 +1,99 @@
+{
+  "app": {
+    "name": "Alantu"
+  },
+  "nav": {
+    "home": "HOME",
+    "faq": "FAQS",
+    "about": "NOSOTROS"
+  },
+
+  "title": "Alantu - Preguntas Frecuentes",
+
+  "header": {
+    "h1": "Preguntas Frecuentes"
+  },
+
+  "q": {
+    "1": {
+      "title": "Que es Alantu?",
+
+      "p1": "La primer plataforma gamificada de cómputo voluntario alimentada por smartphones.",
+
+      "p2": "Una aplicación que te permite colaborar en múltiples proyectos de investigación (por ejemplo: astronomía, clima, fisica, medicina) con simplemente contribuir tu capacidad ociosa de computo.",
+
+      "p3": "Existen muchos problemas que requieren de mucha capacidad de cómputo para ser resueltos. Alantu permite que tu smartphone sea parte de una gran computadora destinada a resolver estos problemas cuando no está siendo activamente usado."
+
+    },
+    "2": {
+      "title": "Como empiezo?",
+
+      "p1": "Busca Alantu en el Google Play Store e instalarlo. Cuando arranque, podrás elegir tu primer misión para empezar a contribuir cómputo y avanzar en el juego.",
+
+      "p2": "Alantu solo va a procesar cuando tu teléfono esté suspendido, conectado al Wi-Fi y cargando."
+
+    },
+
+    "3": {
+      "title": "Que proyectos puedo apoyar?",
+
+      "p1": "Puedes ayudar a investigadores en diferentes áreas. Puedes ayudar a explorar los rincones más recónditos del universo en busca de vida inteligente, puedes ayudar a procesar datos climáticos o buscar mejoras a tratamientos del cáncer, SIDA y mal de Alzheimer entre otros.",
+      "p2": "Alantu ofrece varios proyectos de cómputo voluntario soportados por BOINC."
+    },
+
+    "4": {
+      "title": "Cuales son los requerimientos para correr Alantu?",
+      "p1": "Tienes que tener un dispositivo con al menos:",
+      "li1": "Android 4.1 o superior.",
+      "li2": "1.5GHz Dual Core o 1GHz Quad core.",
+      "li3": "1GB RAM"
+    },
+
+    "5": {
+      "title": "Qué dispositivos son compatibles con Alantu?",
+      "p1": "Alantu actualmente soporta Samsung Galaxy Note 2, Samsung Galaxy Note 3, Samsung Galaxy S3, Samsung Galaxy S4, Samsung Galaxy S4 Active, Samsung Galaxy S4 mini, Samsung Galaxy S5,HTC One (M8), HTC One, HTC One max, HTC One mini, HTC One mini 2, HTC Desire 816, HTC Desire 610, HTC Butterfly, HTC Butterfly s, Google Nexus 4, Google Nexus 5, Motorola Moto G, Motorola Moto X, LG G2."
+    },
+
+    "6": {
+      "title": "Puedo correr Alantu en un IPhone?",
+      "p1": "Alantu solo soporta dispositivos Android. Existen algunas barreras técnicas y legales para hacer cómputo voluntario en iOS. Es posible que en un futuro estas barreras puedan ser superadas."
+    },
+
+    "7": {
+      "title": "Se va a calentar mi dispositivo?",
+      "p1": "Alantu va a parar de procesar antes de que tu telefono alcance la máxima temperatura permitida ( 40ºC )."
+    },
+
+    "8": {
+      "title": "Va a afectar de alguna forma a la batería?",
+      "p1": "Alantu va a estar contribuyendo cuando tu dispositivo esté conectado a una fuente de energía y tu batería esté completamente cargada. La vida útil de tu batería no va a verse significativamente afectada. Así, el tiempo para recargar tu batería no va a verse significativamente extendido."
+    },
+
+    "9": {
+      "title": "Va a consumir de mi plan de datos móviles?",
+      "p1": "No, Alantu va a trasferir datos solo cuando estes conectado a una red Wi-Fi."
+    },
+
+    "10": {
+      "title": "Es seguro de usar?",
+      "p1": "La transmisión del email y password entre el servidor del proyecto y tu teléfono se establece mediante HTTPS (Hypertext Transfer Protocol Secure).",
+      "p2": "La app y los programas que corre solo usan la CPU para correr cálculos para los proyectos soportados y no van a acceder a alguna otra información en tu dispositivo."
+    },
+
+    "11": {
+      "title": "Va a afectar la performance de mi dispositivo?",
+      "p1": "Para nada, Alantu solo va a usar tu CPU cuando no estés activamente usando el dispositivo."
+    },
+
+    "12": {
+      "title": "Corre Alantu cuando mi dispositivo no tiene bateria?",
+      "p1": "No, Alantu solo funciona en dispositivos Android cuando estén cargados y conectados a una red Wi-Fi."
+    },
+
+    "13": {
+      "title": "Que pasa si quiero desinstalar Alantu?",
+      "p1": "Puedes desinstalar la app cuando lo desees usando el procedimiento estándar de tu dispositivo Android."
+    }
+  }
+}
+

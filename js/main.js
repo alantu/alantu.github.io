@@ -208,8 +208,10 @@ $("video").each(function() {
   }
 });
 
-loadHeaderVideo();
-loadProductVideo();
+try {
+  loadHeaderVideo();
+  loadProductVideo();
+} catch(err) {}
 
 $("#fourth-section h1").click(function() {
   $("#fourth-section video").get(0).play();

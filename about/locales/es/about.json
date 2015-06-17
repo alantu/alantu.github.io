@@ -1,0 +1,34 @@
+{
+  "app": {
+    "name": "Alantu"
+  },
+  "nav": {
+    "home": "HOME",
+    "faq": "FAQS",
+    "about": "NOSOTROS"
+  },
+
+  "title": "Alantu - Nosotros",
+
+  "header": { 
+    "h1": "NUESTRA MISIÓN ES DEMOCRATIZAR EL ACCESO A LA CAPACIDAD DE PROCESAMIENTO"
+  },
+
+  "values": {
+    "title": "NUESTROS VALORES",
+    "p1": "Internet es aún joven y estamos enfocándonos más en su funcionalidad que en las puertas que puede abrir, pero el avance tecnológico y sus potenciales consecuencias nos están forzando a pensar diferente.",
+    "p2": "Creemos en un mundo donde los valores clave dependen de aprender a compartir recursos escasos manteniendo libre la decisión de cómo usarlos. Eso es por lo que creemos que la capacidad de procesamiento no debe ser un recurso exclusivo de gobiernos y corporaciones.",
+    "p3": "Los sistemas de computación distribuida existen, pero estos son muy costosos como para que se puedan ser accesibles por cualquiera.",
+    "p4": "Haciendo Alantu simple, enfocado e inmediatamente entendible es una ardua tarea, pero creemos que manteniendo este objetivo, podemos hacer algo que realmente cambie las reglas del juego.",
+    "p5": "Ayúdanos a construir y mejorar la comunidad más grande de procesamiento distribuido!"
+  },
+
+  "team": {
+    "title": "QUIENES SOMOS?",
+    "p1": "Somos un equipo multidisciplinario liderado por estrategas, diseñadores, ingenieros y productores, apasionados por la tecnología que creemos en el trabajo dirigido por la innovación.",
+    "p2": "Nos gusta inventar productos y diseñar experiencias poderosas. ",
+    "p3": "Creemos en experiencias simples que cambien la vida de las personas."
+  }
+}
+
+

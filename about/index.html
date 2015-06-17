@@ -84,7 +84,7 @@
 
         <div class="row">
           <div class="col-md-12">
-            <h1>OUR MISSION IS TO DEMOCRATIZE ACCESS TO PROCESSING CAPACITY</h1>
+            <h1 data-i18n="header.h1">OUR MISSION IS TO DEMOCRATIZE ACCESS TO PROCESSING CAPACITY</h1>
           </div>
         </div>
 
@@ -100,33 +100,23 @@
         <div class="col-md-12">
           <div class="values">
             <img class="hexa-logo" src="../img/orig/alantu-small2.png" />
-            <h2>OUR VALUES</h2>
-
-            <p>Internet is still a young invention. We are still focusing on its features rather than at the doors which it can unlock, but technological progress and its potential consequences are forcing us to think different.</p>
-
-            <p>We believe in a world where key values rely on learning how to share scarce resources while having a free decision on their applications, and that’s why we believe that processing capacity should not be an exclusive asset of governments and corporations.</p>
-
-            <p>Distributed computing systems are already out there, but they are all still too complex to use in order to become accessible for everyone.</p> 
-            <p>Making Alantu simple, focused, and immediately understandable is hard work, but we believe that by sticking to this goal, we can make something that really changes the rules of the game.</p>
-
+            <h2 data-i18n="values.title">OUR VALUES</h2>
+            <p data-i18n="values.p1">Internet is still a young invention. We are still focusing on its features rather than at the doors which it can unlock, but technological progress and its potential consequences are forcing us to think different.</p>
+            <p data-i18n="values.p2">We believe in a world where key values rely on learning how to share scarce resources while having a free decision on their applications, and that’s why we believe that processing capacity should not be an exclusive asset of governments and corporations.</p>
+            <p data-i18n="values.p3">Distributed computing systems are already out there, but they are all still too expensive to use in order to become accessible for everyone.</p> 
+            <p data-i18n="values.p4">Making Alantu simple, focused, and immediately understandable is hard work, but we believe that by sticking to this goal, we can make something that really changes the rules of the game.</p>
             <hr />
-
-            <p class="quote">Help us to build and improve the largest community for distributed processing capacity!</p>
-
+            <p data-i18n="values.p5" class="quote">Help us to build and improve the largest community for distributed processing capacity!</p>
             <hr />
           </div>
 
           <div class="team">
             <img class="hexa-logo" src="../img/orig/alantu-small2.png" />
 
-            <h2>WHO WE ARE?</h2>
-
-            <p>We are a multidisciplinary team lead by strategist, designers, technologist and producers that believe in innovation lead work.</p>
-
-            <p>We love to invent products and design powerful user experiences.</p> 
-
-            <p>We believe in simple experiences that serve a real purpose for the people.</p>
-
+            <h2 data-i18n="team.title">WHO WE ARE?</h2>
+            <p data-i18n="team.p1">We are a multidisciplinary team lead by strategist, designers, technologist and producers that believe in innovation lead work.</p>
+            <p data-i18n="team.p2">We love to invent products and design powerful user experiences.</p> 
+            <p data-i18n="team.p3">We believe in simple experiences that serve a real purpose for the people.</p>
           </div>
 
         </div>
@@ -172,8 +162,17 @@
 
 <script src="../js/picturefill.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="../js/i18next.min.js"></script>
 <script src="../js/bootstrap.js"></script>
 <script src="../js/main.js"></script>
+
+<script>
+  i18n.init({ ns: 'about', useCookie: false }, function(t) {
+    $("body").i18n();
+  });
+</script>
+
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
