@@ -51,7 +51,7 @@
 
 #main-section #play_button {
   display: inline-block;
-  font-size: 1em;
+  font-size: 1.5em;
   font-family: SofiaProBold;
   position: relative;
   text-transform: uppercase;
@@ -129,7 +129,7 @@
 }
 
 #second-section .feature-image {
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .triangle {
@@ -185,6 +185,7 @@
   word-break: all;
 }
 
+/**
 #third-section h1,
 #third-section p {
   color: #FFF;
@@ -215,6 +216,7 @@
 #third-section .feature-image {
   max-width: 205px;
 }
+**/
 
 /** PHONE TUTORIAL **/
 
@@ -271,17 +273,21 @@
   min-height: 1000px;
 }
 
+#third-section h2,
 #fourth-section h2 {
+  color: #FFF;
   margin-bottom: 50px;
   font-family:SofiaProBold;
   text-transform: uppercase;
 }
 
+#third-section .item,
 #fourth-section .item {
   padding: 0 30px;
 }
 
 /** RM **/
+
 #fourth-section hr {
   margin: 30px auto;
   border-width: 3px;
@@ -289,19 +295,23 @@
   border-color: #f95d42;
 }
 
+#third-section h3,
 #fourth-section h3 {
   font-family: SofiaProRegular;
   color: #f95d42;
   text-transform: uppercase;
 }
 
+#third-section .hexa,
 #fourth-section .hexa {
   margin-bottom: 20px;
   width: 86px;
 }
 
+#third-section p,
 #fourth-section p {
   font-family: SofiaProRegular;
+  color: #FFF;
 }
 
 #fourth-section .video-container {
@@ -459,6 +469,7 @@
     padding-bottom: 200px;
   }
 
+  /**
   #third-section .feature-image {
     max-width: 300px;
   }
@@ -466,6 +477,7 @@
   #third-section .hex-logo {
     margin-top: 10px;
   }
+  **/
 
   #third-section-b {
     padding: 250px 0 280px;
@@ -517,8 +529,10 @@
     width: 55px; 
   }
 
+  /**
   #third-section .copy {
     padding-top: 110px;
   }
+  **/
 }
 

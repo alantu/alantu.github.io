@@ -16,15 +16,11 @@
   <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="../css/base.css" rel="stylesheet" type="text/css">
   <link href="../css/faq.css" rel="stylesheet" type="text/css">
-  <!--
-  <link href="css/animate.css" rel="stylesheet">
-  -->,
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
-<body>
-
+<body style="display:none">
     <div class="navbar navbar-inverse navbar-static-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -43,6 +39,9 @@
             <li><a href="/" data-i18n="nav.home">HOME</a></li>
             <li><a href="" data-i18n="nav.faq">FAQ</a></li>
             <li><a href="/about" data-i18n="nav.about">ABOUT</a></li>
+
+            <li><a href="?setLng=es">ES</a></li>
+            <li><a href="?setLng=en">EN</a></li>
           </ul>
         </div>
       </div>
@@ -66,6 +65,8 @@
             <li><a href="/" data-i18n="nav.home">HOME</a></li>
             <li><a href="" data-i18n="nav.faq">FAQ</a></li>
             <li><a href="/about" data-i18n="nav.about">ABOUT</a></li>
+            <li><a href="?setLng=es">ES</a></li>
+            <li><a href="?setLng=en">EN</a></li>
           </ul>
         </div>
       </div>
@@ -224,7 +225,11 @@
 
 <script>
   i18n.init({ ns: 'faq' }, function(t) {
-    $("body").i18n({ lng: "es" });
+      $("body").i18n();
+
+      setTimeout(function() {
+        $("body").fadeIn();
+      }, 100)
   });
 </script>
 
@@ -237,3 +242,4 @@
   ga('send', 'pageview');
 </script>
 </html>
+

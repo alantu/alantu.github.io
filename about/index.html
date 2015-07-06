@@ -21,7 +21,7 @@
   <link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
-<body id="about-page">
+<body id="about-page" style="display:none;">
   <div id="header">
     <div class="navbar navbar-inverse navbar-static-top">
       <div class="container-fluid">
@@ -43,6 +43,9 @@
             <li><a href="/">HOME</a></li>
             <li><a href="/faq">FAQ</a></li>
             <li><a href="">ABOUT</a></li>
+
+            <li><a href="?setLng=es">ES</a></li>
+            <li><a href="?setLng=en">EN</a></li>
           </ul>
         </div>
 
@@ -71,6 +74,9 @@
             <li><a href="/">HOME</a></li>
             <li><a href="/faq">FAQ</a></li>
             <li><a href="">ABOUT</a></li>
+
+            <li><a href="?setLng=es">ES</a></li>
+            <li><a href="?setLng=en">EN</a></li>
           </ul>
         </div>
 
@@ -167,9 +173,13 @@
 <script src="../js/main.js"></script>
 
 <script>
-  i18n.init({ ns: 'about', useCookie: false }, function(t) {
+  i18n.init({ ns: 'about' }, function(t) {
     $("body").i18n();
   });
+
+  setTimeout(function() {
+    $("body").fadeIn();
+  }, 100)
 </script>
 
 

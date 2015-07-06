@@ -10,14 +10,14 @@
 
   "get-early-access": "Obtener Acceso Temprano",
 
-  "tagline": "Procesando el Futuro",
+  "tagline": "Procesando El Futuro",
 
   "watch-video": "Ver Video",
 
   "A": {
-    "title": "PEQUENAS CONTRIBUCIONES PUEDEN GENERAR GRANDES CAMBIOS",
-    "subtitle": "Que es Alantu?",
-    "text": "Alantu es un juego cuyo objetivo es darle vida a la computadora mas grande del planeta. Donando la capacidad ociosa de tu celular, podrás completar misiones que ayudaran a resolver problemas complejos vinculados a medicina, biologia, matematica y otras disciplinas."
+    "title": "LLEVA AL PRÓXIMO NIVEL LA RELACIÓN ENTRE HUMANOS Y MÁQUINAS",
+    "subtitle": "Estás Listo?",
+    "text": "Estamos atravesando un hito crucial en la historia de la humanidad. De las 5000 generaciones de humanos que vivieron en la tierra, posiblemente los que vivan en este siglo los sean los que determinen NUESTRO DESTINO."
   },
 
   "B": {
@@ -34,7 +34,7 @@
   },
 
   "D": {
-    "title": "Tu Smartphone Puede ser parte de una Red de Computadoras Destinadas a Resolver algunos de los Principales Problemas del Mundo",
+    "title": "Tu Smartphone Puede Alimentar una Red de Computadoras Destinadas a Resolver los Principales Problemas del Mundo",
 
     "hunt": {
       "title": "JUGAR",
@@ -47,7 +47,7 @@
     },
 
     "reward": {
-      "title": "Premiar",
+      "title": "Recompensar",
       "text": "Colabora en proyectos, hace crecer tu red y obtén recompensas."
     }
 
