@@ -37,9 +37,9 @@
 </head>
 
 <body id="home-page" style="display:none">
-  <div id="header">
-    <video id="header-video" poster="img/small/poster.png" loop>
-      <source data-src="video/optimized/Autos_Website_5.mp4">
+  <div id="header" style="">
+    <video id="header-video" poster="img/orig/poster.png" loop>
+      <source src="video/optimized/Autos_Website_5.mp4">
     </video>
 
     <div class="navbar navbar-inverse navbar-static-top">
@@ -158,12 +158,10 @@
 
         <div class="col-sm-5">
 
-          <img class="feature-image wow fadeInLeft2" 
-            src="img/orig/phone5.png" />
-
+          <img class="feature-image" src="img/orig/phone5.png" />
         </div>
 
-        <div class="col-sm-7 copy wow fadeInRight2">
+        <div class="col-sm-7 copy">
           <h4 data-i18n="A.subtitle">WHAT'S ALANTU?</h4>
           <h1 data-i18n="A.title">SMALL CONTRIBUTIONS CAN MAKE BIG CHANGES</h1>
           <p data-i18n="A.text">Alantu is a game which aims to create the biggest computer ever made. By donating your smartphone's idle capacity, you will be able to complete missions that will help to solve complex problems related to medicine, biology, mathematics and other disciplines.</p>
@@ -188,15 +186,15 @@
       <div class="container">
         <div class="row">
 
-          <div class="hexa col-xs-5 text-right wow fadeIn">
+          <div class="hexa col-xs-5 text-right">
             <img src="img/orig/ico-people.png" />
             <h4 data-i18n="B.title-1">PEOPLE</h4>
             <p data-i18n="B.text-1">Can conceptualize problems, but many of them are still being unable to be solved.</p>
           </div>
-          <div class="arrows col-xs-2 text-center wow fadeIn" data-wow-delay="1s">
+          <div class="arrows col-xs-2 text-center">
             <img src="img/orig/ico-arrows.png" />
           </div>
-          <div class="hexa col-xs-5 text-left wow fadeIn" data-wow-delay=".3s">
+          <div class="hexa col-xs-5 text-left">
             <img src="img/orig/ico-connect.png" />
             <h4 data-i18n="B.title-2">COMPUTERS</h4>
             <p data-i18n="B.text-2">May unlock what humans can't, but processing capacity continues to be a scarce resource.</p>
@@ -221,17 +219,17 @@
         </div>
 
         <div class="row text-center">
-          <div class="item col-sm-4 wow fadeIn">
+          <div class="item col-sm-4">
             <h3 data-i18n="D.hunt.title">PLAY</h3>
             <img class="hexa" src="img/orig/ico-arrow.png" />
             <p data-i18n="D.hunt.text">Resolve missions and bring new devices to your grid.
           </div>
-          <div class="item col-sm-4 wow fadeIn" data-wow-delay=".4s">
+          <div class="item col-sm-4">
             <h3 data-i18n="D.share.title">SHARE</h3>
             <img class="hexa" src="img/orig/ico1.png" />
             <p data-i18n="D.share.text">Donate your spare smartphone computing power to fuel worldwide research projects.</p>
           </div>
-          <div class="item col-sm-4 wow fadeIn" data-wow-delay=".8s">
+          <div class="item col-sm-4">
             <h3 data-i18n="D.reward.title">REWARD</h3>
             <img class="hexa" src="img/orig/ico-reward.png" />
             <p data-i18n="D.reward.text">Collaborate on projects, boost your grid and get rewarded for it.</p>
@@ -239,7 +237,7 @@
         </div>
         <!--
         <div class="row">
-          <div class="col-sm-5 copy wow fadeInDown2">
+          <div class="col-sm-5 copy">
             <h1 data-i18n="C.title">OUR PRODUCT</h1>
             <h4 data-i18n="C.subtitle">HOW DOES IT WORK?</h4>
             <p data-i18n="C.text">The first crowd-processing mobile solution based on a gamified community. The grid, connected devices, achieving the greatest processing capacity that mankind has ever generated.</p>
@@ -247,7 +245,7 @@
           </div>
 
           <div class="col-sm-offset-2 col-sm-5">
-            <img class="feature-image wow fadeInLeft2" src="img/orig/phone4.png" />
+            <img class="feature-image" src="img/orig/phone4.png" />
           </div>
 
         </div> <!-- /row -->
@@ -283,17 +281,17 @@
         </div>
 
         <div class="row">
-          <div class="item col-sm-4 wow fadeIn">
+          <div class="item col-sm-4">
             <h3 data-i18n="D.hunt.title">PLAY</h3>
             <img class="hexa" src="img/orig/ico-arrow.png" />
             <p data-i18n="D.hunt.text">Resolve missions and bring new devices to your grid.
           </div>
-          <div class="item col-sm-4 wow fadeIn" data-wow-delay=".4s">
+          <div class="item col-sm-4">
             <h3 data-i18n="D.share.title">SHARE</h3>
             <img class="hexa" src="img/orig/ico1.png" />
             <p data-i18n="D.share.text">Donate your spare smartphone computing power to fuel worldwide research projects.</p>
           </div>
-          <div class="item col-sm-4 wow fadeIn" data-wow-delay=".8s">
+          <div class="item col-sm-4">
             <h3 data-i18n="D.reward.title">REWARD</h3>
             <img class="hexa" src="img/orig/ico-reward.png" />
             <p data-i18n="D.reward.text">Collaborate on projects, boost your grid and get rewarded for it.</p>
@@ -419,10 +417,7 @@
 <script src="js/i18next.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/main.js"></script>
-<script src="js/wow.min.js"></script>
 <script>
-  new WOW().init();
-
   i18n.init({ ns: 'home' }, function(t) {
       $("body").i18n();
   });

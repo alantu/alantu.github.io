@@ -1,13 +1,11 @@
 #header {
   width: 100%;
-  /*
-  min-height: 100%;
-  */
   overflow: hidden;
   position: relative;
 }
 
 #header-video {
+  background-size:100% 100%;
   min-height: 100%;
   position: absolute;
   top:0;
@@ -114,6 +112,8 @@
 }
 
 #second-section {
+  position: relative;
+  z-index: 99999;
   margin-top: -100px;
   /**
   padding-bottom: 50px;
@@ -184,39 +184,6 @@
   font-family: SofiaProBold;
   word-break: all;
 }
-
-/**
-#third-section h1,
-#third-section p {
-  color: #FFF;
-}
-
-#third-section h1 {
-  margin-bottom: 20px;
-}
-
-#third-section h4 {
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-#third-section p {
-  font-family: SofiaProRegular;
-  margin-bottom: 25px;
-}
-
-#third-section .logo-bottom {
-  max-height: 95px;
-}
-
-#third-section .hex-logo {
-  margin: 0 0 15px;
-}
-
-#third-section .feature-image {
-  max-width: 205px;
-}
-**/
 
 /** PHONE TUTORIAL **/
 
@@ -426,12 +393,44 @@
 
 }
 */
+@media (max-width: 750px) and (min-width: 450px) {
+
+  #third-section p {
+    padding: 0 100px;
+  }
+
+}
 
 @media (max-width: 768px) {
+
+  #header {
+    background-image:url(../img/orig/poster.png);
+    background-size: cover;
+  }
 
   #main-section #header-logo {
     margin-bottom: 40px;
     margin-top: -30px;
+  }
+
+  #third-section h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+
+  #third-section h3 {
+    font-size: 1.7em;
+    margin: 5px 0 3px;
+  }
+
+  #third-section p {
+    padding: 0;
+  }
+
+  #third-section img.hexa {
+    width: 50px;
+    margin-bottom: 10px;
   }
 
   #third-section {
