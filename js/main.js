@@ -130,8 +130,6 @@ function loadProductVideo() {
     productVideo.load();
     productVideo.play();
     startedProductVideo = true;
-
-    console.log('loaded product video');
   }
 }
 
