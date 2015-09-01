@@ -422,10 +422,10 @@
   i18n.init({ ns: 'home' }, function(t) {
 
     // Dynamically set youtube video url by lang
-    var lang = i18n.lng();
+    var lang = i18n.lng() || "en";
     var videoUrl = "//www.youtube.com/embed/7AbPyEM9Oj8?showinfo=0&rel=0&autoplay=1";
 
-    if (lang === 'es/') {
+    if (lang.indexOf('es') === 0) {
       videoUrl = "//www.youtube.com/embed/NGoKK92dDRI?showinfo=0&rel=0&autoplay=1";
     }
 
