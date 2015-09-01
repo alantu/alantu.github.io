@@ -118,7 +118,7 @@
               <!--
             <a id="play_button" href="#" data-target="#video" data-video="//www.youtube.com/embed/b4ARsu4ygwc?showinfo=0&rel=0&autoplay=1">
               -->
-            <a id="play_button" href="#" data-target="#video" data-video="//www.youtube.com/embed/NGoKK92dDRI?showinfo=0&rel=0&autoplay=1">
+            <a id="play_button" href="#" data-target="#video" data-video="">
               
               <img class="play-icon" src="img/orig/play.png" />
               <img src="img/orig/play_button.png" /><span data-i18n="watch-video">WATCH VIDEO</span>
@@ -418,8 +418,20 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/main.js"></script>
 <script>
+
   i18n.init({ ns: 'home' }, function(t) {
-      $("body").i18n();
+
+    // Dynamically set youtube video url by lang
+    var lang = i18n.lng();
+    var videoUrl = "//www.youtube.com/embed/7AbPyEM9Oj8?showinfo=0&rel=0&autoplay=1";
+
+    if (lang === 'es/') {
+      videoUrl = "//www.youtube.com/embed/NGoKK92dDRI?showinfo=0&rel=0&autoplay=1";
+    }
+
+    $('#play_button').attr('data-video', videoUrl);
+
+    $("body").i18n();
   });
 
   setTimeout(function() {

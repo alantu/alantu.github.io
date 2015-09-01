@@ -208,6 +208,7 @@ $("video").each(function() {
   }
 });
 
+
 try {
   loadHeaderVideo();
   loadProductVideo();
